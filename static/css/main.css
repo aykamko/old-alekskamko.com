@@ -1,0 +1,383 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.1; }
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+h1 {
+  font-size: 38px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 26px; }
+
+h4 {
+  font-size: 20px; }
+
+.section, .heading, .aboutme {
+  width: 100%;
+  padding: 100px 8px; }
+
+.container, .heading .heading-box, .aboutme .console {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.heading {
+  background: #afd0be; }
+  .heading .heading-box .portrait {
+    float: left;
+    max-width: 300px;
+    border-radius: 50%; }
+  .heading .heading-box .heading-text {
+    display: table-cell;
+    vertical-align: middle;
+    height: 300px;
+    padding-left: 40px; }
+    .heading .heading-box .heading-text h1 {
+      margin: 0;
+      font-size: 68px; }
+    .heading .heading-box .heading-text h2 {
+      margin: 0;
+      font-size: 46px; }
+  .heading:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.aboutme {
+  padding-top: 50px;
+  background: #8690b8; }
+  .aboutme .blurb {
+    text-align: center;
+    margin-bottom: 42px;
+    color: white; }
+  .aboutme .console {
+    padding: 35px;
+    border-top: 20px solid #e5e5e5;
+    border-radius: 4px;
+    font-family: Monaco, serif;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 20px; }
+    @media screen and (max-width: 696px) {
+      .aboutme .console {
+        padding: 5.14706%; } }
+    .aboutme .console p {
+      display: inline-block;
+      margin: 0; }
+    .aboutme .console a {
+      color: #81a2be; }
+    .aboutme .console .indent {
+      display: inline-block;
+      padding-left: 32px;
+      text-indent: -16px; }
+
+/**
+ * Syntax highlighting styles
+ * tomorrow-pygments by MozMorris 
+ * https://github.com/MozMorris/tomorrow-pygments
+ */
+.highlight, .aboutme .console {
+  background: #1d1f21;
+  color: #c5c8c6;
+  /* Comment */
+  /* Error */
+  /* Keyword */
+  /* Literal */
+  /* Name */
+  /* Operator */
+  /* Punctuation */
+  /* Comment.Multiline */
+  /* Comment.Preproc */
+  /* Comment.Single */
+  /* Comment.Special */
+  /* Generic.Deleted */
+  /* Generic.Emph */
+  /* Generic.Heading */
+  /* Generic.Inserted */
+  /* Generic.Prompt */
+  /* Generic.Strong */
+  /* Generic.Subheading */
+  /* Keyword.Constant */
+  /* Keyword.Declaration */
+  /* Keyword.Namespace */
+  /* Keyword.Pseudo */
+  /* Keyword.Reserved */
+  /* Keyword.Type */
+  /* Literal.Date */
+  /* Literal.Number */
+  /* Literal.String */
+  /* Name.Attribute */
+  /* Name.Builtin */
+  /* Name.Class */
+  /* Name.Constant */
+  /* Name.Decorator */
+  /* Name.Entity */
+  /* Name.Exception */
+  /* Name.Function */
+  /* Name.Label */
+  /* Name.Namespace */
+  /* Name.Other */
+  /* Name.Property */
+  /* Name.Tag */
+  /* Name.Variable */
+  /* Operator.Word */
+  /* Text.Whitespace */
+  /* Literal.Number.Float */
+  /* Literal.Number.Hex */
+  /* Literal.Number.Integer */
+  /* Literal.Number.Oct */
+  /* Literal.String.Backtick */
+  /* Literal.String.Char */
+  /* Literal.String.Doc */
+  /* Literal.String.Double */
+  /* Literal.String.Escape */
+  /* Literal.String.Heredoc */
+  /* Literal.String.Interpol */
+  /* Literal.String.Other */
+  /* Literal.String.Regex */
+  /* Literal.String.Single */
+  /* Literal.String.Symbol */
+  /* Name.Builtin.Pseudo */
+  /* Name.Variable.Class */
+  /* Name.Variable.Global */
+  /* Name.Variable.Instance */
+  /* Literal.Number.Integer.Long */ }
+  .highlight .hll, .aboutme .console .hll {
+    background-color: #373b41; }
+  .highlight .c, .aboutme .console .c {
+    color: #969896; }
+  .highlight .err, .aboutme .console .err {
+    color: #cc6666; }
+  .highlight .k, .aboutme .console .k {
+    color: #b294bb; }
+  .highlight .l, .aboutme .console .l {
+    color: #de935f; }
+  .highlight .n, .aboutme .console .n {
+    color: #c5c8c6; }
+  .highlight .o, .aboutme .console .o {
+    color: #8abeb7; }
+  .highlight .p, .aboutme .console .p {
+    color: #c5c8c6; }
+  .highlight .cm, .aboutme .console .cm {
+    color: #969896; }
+  .highlight .cp, .aboutme .console .cp {
+    color: #969896; }
+  .highlight .c1, .aboutme .console .c1 {
+    color: #969896; }
+  .highlight .cs, .aboutme .console .cs {
+    color: #969896; }
+  .highlight .gd, .aboutme .console .gd {
+    color: #cc6666; }
+  .highlight .ge, .aboutme .console .ge {
+    font-style: italic; }
+  .highlight .gh, .aboutme .console .gh {
+    color: #c5c8c6;
+    font-weight: bold; }
+  .highlight .gi, .aboutme .console .gi {
+    color: #b5bd68; }
+  .highlight .gp, .aboutme .console .gp {
+    color: #969896;
+    font-weight: bold; }
+  .highlight .gs, .aboutme .console .gs {
+    font-weight: bold; }
+  .highlight .gu, .aboutme .console .gu {
+    color: #8abeb7;
+    font-weight: bold; }
+  .highlight .kc, .aboutme .console .kc {
+    color: #b294bb; }
+  .highlight .kd, .aboutme .console .kd {
+    color: #b294bb; }
+  .highlight .kn, .aboutme .console .kn {
+    color: #8abeb7; }
+  .highlight .kp, .aboutme .console .kp {
+    color: #b294bb; }
+  .highlight .kr, .aboutme .console .kr {
+    color: #b294bb; }
+  .highlight .kt, .aboutme .console .kt {
+    color: #f0c674; }
+  .highlight .ld, .aboutme .console .ld {
+    color: #b5bd68; }
+  .highlight .m, .aboutme .console .m {
+    color: #de935f; }
+  .highlight .s, .aboutme .console .s {
+    color: #b5bd68; }
+  .highlight .na, .aboutme .console .na {
+    color: #81a2be; }
+  .highlight .nb, .aboutme .console .nb {
+    color: #c5c8c6; }
+  .highlight .nc, .aboutme .console .nc {
+    color: #f0c674; }
+  .highlight .no, .aboutme .console .no {
+    color: #cc6666; }
+  .highlight .nd, .aboutme .console .nd {
+    color: #8abeb7; }
+  .highlight .ni, .aboutme .console .ni {
+    color: #c5c8c6; }
+  .highlight .ne, .aboutme .console .ne {
+    color: #cc6666; }
+  .highlight .nf, .aboutme .console .nf {
+    color: #81a2be; }
+  .highlight .nl, .aboutme .console .nl {
+    color: #c5c8c6; }
+  .highlight .nn, .aboutme .console .nn {
+    color: #f0c674; }
+  .highlight .nx, .aboutme .console .nx {
+    color: #81a2be; }
+  .highlight .py, .aboutme .console .py {
+    color: #c5c8c6; }
+  .highlight .nt, .aboutme .console .nt {
+    color: #8abeb7; }
+  .highlight .nv, .aboutme .console .nv {
+    color: #cc6666; }
+  .highlight .ow, .aboutme .console .ow {
+    color: #8abeb7; }
+  .highlight .w, .aboutme .console .w {
+    color: #c5c8c6; }
+  .highlight .mf, .aboutme .console .mf {
+    color: #de935f; }
+  .highlight .mh, .aboutme .console .mh {
+    color: #de935f; }
+  .highlight .mi, .aboutme .console .mi {
+    color: #de935f; }
+  .highlight .mo, .aboutme .console .mo {
+    color: #de935f; }
+  .highlight .sb, .aboutme .console .sb {
+    color: #b5bd68; }
+  .highlight .sc, .aboutme .console .sc {
+    color: #c5c8c6; }
+  .highlight .sd, .aboutme .console .sd {
+    color: #969896; }
+  .highlight .s2, .aboutme .console .s2 {
+    color: #b5bd68; }
+  .highlight .se, .aboutme .console .se {
+    color: #de935f; }
+  .highlight .sh, .aboutme .console .sh {
+    color: #b5bd68; }
+  .highlight .si, .aboutme .console .si {
+    color: #de935f; }
+  .highlight .sx, .aboutme .console .sx {
+    color: #b5bd68; }
+  .highlight .sr, .aboutme .console .sr {
+    color: #b5bd68; }
+  .highlight .s1, .aboutme .console .s1 {
+    color: #b5bd68; }
+  .highlight .ss, .aboutme .console .ss {
+    color: #b5bd68; }
+  .highlight .bp, .aboutme .console .bp {
+    color: #c5c8c6; }
+  .highlight .vc, .aboutme .console .vc {
+    color: #cc6666; }
+  .highlight .vg, .aboutme .console .vg {
+    color: #cc6666; }
+  .highlight .vi, .aboutme .console .vi {
+    color: #cc6666; }
+  .highlight .il, .aboutme .console .il {
+    color: #de935f; }
