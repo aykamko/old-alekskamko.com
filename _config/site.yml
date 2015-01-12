@@ -9,5 +9,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://alekskamko.com" # the base hostname & protocol for your site
 github_username: aykamko
 
+destination: _deploy
+exclude: [rakefile]
+include: [README.md]
+force_update: true
+
 # Build settings
 markdown: kramdown
