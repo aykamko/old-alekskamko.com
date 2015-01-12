@@ -1,0 +1,13 @@
+root = File.expand_path('.')
+
+deploy_dir = "_deploy"
+config_files = Dir.glob("_config/*.yml").join(",")
+
+task :serve do
+    cd "#{root}" do
+        puts "Starting jekyll server."
+        puts "Config files:"
+        puts config_files
+        system("jekyll serve --config #{config_files} --destination #{deploy_dir} --watch")
+    end
+end

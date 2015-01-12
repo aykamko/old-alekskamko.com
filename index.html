@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="heading">
+  <div class="heading-box">
+    <img class="portrait" src="{{ "/static/img/portrait.jpg" | prepend: site.baseurl }}">
+    <div class="heading-text">
+      <h1>Hi!</h1>
+      <h2>I'm Aleks Kamko.</h2>
+    </div>
+  </div>
+</div>
+
+<div class="aboutme">
+  <div class="blurb">I'm a developer living in the Bay Area.</div>
+  <div class="console">
+    <span class="gp">>>></span> <span class="kn">from</span> <span class="nn">aboutme</span> <span class="kn">import</span><span class="o"> * </span>
+    <br/><br/>
+
+    {% for field in site.about %}
+    <span class="gp">>>></span> {{field.key}}
+    <br/>
+    {% assign type = field.value | gettype %}
+    {% if type == "Array" %}
+    [{% for item in field.value %}'<span class="s">{{ item | markdownify | stripp }}</span>'{% unless forloop.last %}, {% endunless %}{% endfor %}]
+    {% elsif type == "Hash" %}
+    {<br>{% for entry in field.value %}<div class="indent">'<span class="s">{{ entry | first }}</span>': '<span class="s">{{ entry | last }}</span>'{% unless forloop.last %},{% endunless %}</div><br>{% endfor %}}
+    {% else %}
+    '<span class="s">{{ field.value | markdownify | stripp }}</span>'
+    {% endif %}
+    {% unless forloop.last %}<br/><br/>{% endunless %}
+    {% endfor %}
+  </div>
+</div>

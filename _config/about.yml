@@ -1,0 +1,31 @@
+about:
+
+    - key: education
+      value:
+          university: UC Berkeley
+          major: Electrical Engineering and Computer Science
+          graduation: May 2016
+    - key: latest_work
+      value:
+          company: Facebook
+          team: Language Technology
+          term: Summer 2014
+    - key: interests
+      value:
+          - coding
+          - teaching
+          - music
+          - biking
+          - sick threads
+          - super smash
+    - key: links
+      value:
+          - "[github](https://github.com/aykamko/)"
+          - "[linkedin](http://www.linkedin.com/in/aykamko)"
+          - "[facebook](http://fb.me/ayk)"
+          - "[spotify](http://open.spotify.com/user/mrpersonguy)"
+          - "[lastfm](http://www.last.fm/user/aykamko)"
+    - key: resume
+      value: "[alekskamko_resume.pdf](http://alekskamko.com/static/downloads/alekskamko_resume.pdf)"
+    - key: email
+      value: "[ak@alekskamko.com](mailto:ak@alekskamko.com)"
