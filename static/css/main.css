@@ -88,22 +88,36 @@ h1, h2, h3, h4, h5, h6 {
     display: table;
     clear: both; }
 
-.section, .aboutme {
+.section, .intro, .aboutme {
   width: 100%;
   padding: 50px 8px; }
-  .section .container, .aboutme .container {
+  .section .container, .intro .container, .aboutme .container {
     max-width: 800px;
     margin: 0 auto; }
+    .section .container:after, .intro .container:after, .aboutme .container:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+.intro {
+  background: #ffddd3; }
+  .intro .portrait {
+    max-width: 480px;
+    padding-right: 40px;
+    float: left;
+    border-radius: 50%; }
+  .intro .blurb {
+    height: 400px;
+    display: table-cell;
+    vertical-align: middle; }
+    .intro .blurb h1 {
+      font-size: 70px;
+      text-indent: -3px; }
+    .intro .blurb h2 {
+      font-size: 43px; }
 
 .aboutme {
   background: #8690b8; }
-  .aboutme .portrait-div {
-    max-width: 480px;
-    padding: 0 40px;
-    margin: 0 auto;
-    margin-bottom: 40px; }
-    .aboutme .portrait-div > img {
-      border-radius: 50%; }
   .aboutme .blurb {
     text-align: center;
     color: white;
