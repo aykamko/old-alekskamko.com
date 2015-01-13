@@ -41,109 +41,73 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 html {
-  box-sizing: border-box;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+  box-sizing: border-box; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
 
+body {
+  font-family: "Quattrocento Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  color: #111111;
+  -webkit-text-size-adjust: 100%; }
+
 a {
+  color: #81a2be;
   text-decoration: none; }
+  a:visited {
+    color: #537ca0; }
   a:hover {
     text-decoration: underline; }
 
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+ul, ol {
+  margin-left: 40px; }
+
+li > ul, li > ol {
+  margin-bottom: 0; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.1; }
 
-h1, h2, h3 {
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 10px; }
-
-h4, h5, h6 {
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
-h1 {
-  font-size: 38px; }
-
-h2 {
-  font-size: 32px; }
-
-h3 {
-  font-size: 26px; }
-
-h4 {
-  font-size: 20px; }
+.wrapper {
+  max-width: 816px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 8px;
+  padding-left: 8px; }
+  .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .section, .aboutme {
   width: 100%;
   padding: 50px 8px; }
-
-.container, .aboutme .console {
-  max-width: 800px;
-  margin: 0 auto; }
+  .section .container, .aboutme .container {
+    max-width: 800px;
+    margin: 0 auto; }
 
 .aboutme {
-  padding-top: 8px;
   background: #8690b8; }
   .aboutme .portrait-div {
-    text-align: center;
-    max-width: 430px;
-    padding: 30px;
-    margin: 0 auto; }
+    max-width: 480px;
+    padding: 0 40px;
+    margin: 0 auto;
+    margin-bottom: 40px; }
     .aboutme .portrait-div > img {
-      width: 100%;
       border-radius: 50%; }
   .aboutme .blurb {
     text-align: center;
-    margin-bottom: 38px;
-    color: white; }
+    color: white;
+    margin-bottom: 40px; }
   .aboutme .console {
     padding: 35px;
     border-top: 20px solid #e5e5e5;
@@ -151,16 +115,11 @@ h4 {
     font-family: Monaco, monospace;
     font-size: 13px;
     letter-spacing: 0.2px;
-    line-height: 20px; }
-    @media screen and (max-width: 696px) {
+    line-height: 1.7; }
+    @media screen and (max-width: 600px) {
       .aboutme .console {
-        padding: 5.14706%; } }
-    .aboutme .console p {
-      display: inline-block;
-      margin: 0; }
-    .aboutme .console a {
-      color: #81a2be; }
-    .aboutme .console .indent {
+        padding: 5.99315%; } }
+    .aboutme .console > .indent {
       display: inline-block;
       padding-left: 32px;
       text-indent: -16px; }
