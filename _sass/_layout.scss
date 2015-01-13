@@ -1,27 +1,42 @@
 .section {
     width: 100%;
     padding: $section-padding $side-padding;
+}
 
-    .container {
-        max-width: $content-width;
-        margin: 0 auto;
+.container {
+    max-width: $content-width;
+    margin: 0 auto;
+    @include clearfix;
+}
+
+.intro {
+    @extend .section;
+    background: $triad-salmon;
+
+    .portrait {
+        max-width: 400px + ($spacing-unit * 2);
+        padding-right: $spacing-unit;
+        float: left;
+        border-radius: 50%;
+    }
+
+    .blurb {
+        height: 400px;
+        display: table-cell;
+        vertical-align: middle;
+        h1 { 
+            font-size: 70px; 
+            text-indent: -3px;
+        }
+        h2 { 
+            font-size: 43px; 
+        }
     }
 }
 
 .aboutme {
     @extend .section;
     background: $pantone-purple-impression;
-
-    .portrait-div {
-        max-width: 400px + ($spacing-unit * 2);
-        padding: 0 $spacing-unit;
-        margin: 0 auto;
-        @include vertical-spacer;
-
-        > img {
-            border-radius: 50%;
-        }
-    }
 
     .blurb {
         text-align: center;
@@ -48,6 +63,96 @@
             display: inline-block;
             padding-left: 32px;
             text-indent: -16px;
+        }
+    }
+}
+
+.projects {
+    @extend .section;
+    background: lighten($grey-color, 40%);
+
+    .blurb {
+        text-align: center;
+        @include vertical-spacer;
+    }
+
+    .project {
+        @include clearfix;
+        &:not(:last-child) {
+            @include vertical-spacer;
+        }
+
+        .project-desc {
+            height: 350px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .project-img-div {
+            $project-img-div-width: 350px;
+            width: $project-img-div-width;
+            border: $side-padding solid $link-color-light;
+            border-radius: 50%;
+
+            > img {
+                border-radius: 50%;
+                width: $project-img-div-width - (2 * $side-padding);
+            }
+        }
+
+        &:nth-child(even) {
+            .project-img-div {
+                float: left;
+                margin-right: $spacing-unit;
+            }
+        }
+        &:nth-child(odd) {
+            .project-img-div {
+                float: right;
+                margin-left: $spacing-unit;
+            }
+        }
+    }
+}
+
+.resume {
+    @extend .section;
+    background: lighten($grey-color, 45%);
+
+    .blurb {
+        text-align: center;
+        @include vertical-spacer;
+    }
+
+    .resume-section {
+        &:not(:last-child) {
+            @include vertical-spacer;
+        }
+
+        .section-title {
+            border-bottom: 1px solid $link-color;
+            margin: ($spacing-unit / 2) 0;
+        }
+
+        .resume-subsection {
+            &:not(:last-child) {
+                margin-bottom: $spacing-unit / 2;
+            }
+
+            .title-row {
+                @include clearfix;
+
+                .title-left {
+                    font-weight: 700;
+                }
+                .title-right {
+                    float: right;
+                }
+            }
+
+            > ul {
+                list-style-type: circle;
+            }
         }
     }
 }

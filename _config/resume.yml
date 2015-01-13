@@ -1,0 +1,103 @@
+resume:
+
+    experience:
+
+      - title_left: Software Engineer
+        subtitle_left: Facebook Inc.
+        title_right: May 2014 - Aug 2014
+        info:
+          - Worked in the Language Technology team on Machine Translation.
+          - Monitored and analyzed Out-of-Vocabularies (OOVs) in translation requests.
+          - Built a web interface to flag and eliminate OOVs.
+
+      - title_left: CS61B Undergraduate Student Instructor
+        subtitle_left: UC Berkeley
+        title_right: Aug 2014 - Present
+        info:
+          - TA for introductory Data Structures and Algorithms course at UC Berkeley.
+          - Built the git infrastructure and part of the autograder for the class.
+          - I teach three sections, hold office hours, prepare discussion notes, and make test question.
+
+      - title_left: iOS Software Engineer
+        subtitle_left: Facebook Inc.
+        title_right: Jul 2013 - Aug 2013
+        info:
+          - Grokked Objective-C and iOS development through an extensive training session with Big Nerd Ranch. 
+          - Led a team of three other intern engineers in building an iOS application, utilizing SDKs from various services including Google Maps, Facebook, and Parse.
+          - Participated enthusiastically in company-held hackathons, building two standalone iOS applications, as well as an HTML5 app using Heroku with MongoDB.
+
+      - title_left: Lead Developer
+        subtitle_left: "[berkeley.uguru.me](http://berkeley.uguru.me)"
+        title_right: Aug 2013 - Dec 2013
+        info:
+          - Led Flask backend development for an rising Berkeley tutoring startup. 
+          - Oversaw PostgresSQL databases, resolved daily bug reports coming from the website, and actively developed new features. 
+          - Played a substantial role in designing and implementing frontend.
+
+      - title_left: CS61A Reader/Grader
+        subtitle_left: UC Berkeley
+        title_right: Aug 2013 - Dec 2013
+        info: 
+          - Guided students through essential computing concepts and encouraged enthusiasm in computer science in general. 
+          - Reinforced students' and personal knowledge and experience with Python, Scheme, and proper coding etiquette/style.
+
+
+    education:
+
+      - title_left: BS Electrical Engineering and Computer Science
+        subtitle_left: University of California, Berkeley
+        title_right: May 2016
+        info:
+          - Structure and Interpretation of Computer Programs (Python, Scheme)
+          - Data Structures and Algorithms (Java)
+          - Machine Structures (C, MIPS)
+          - Algorithms
+          - Operating Systems (C, Java)
+          - Compilers (C, Python)
+
+    skills:
+
+      - subtitle_left: Proficient
+        list: 
+            - Python
+            - Java
+            - Javascript
+            - jQuery
+            - PHP
+            - HTML/CSS
+            - Objective-C
+      - subtitle_left: Experienced
+        list:
+            - Flask
+            - Node.js
+            - C
+            - SQL/MySQL
+            - mercurial
+            - bash
+      - subtitle_left: Exposure
+        list:
+            - Ruby
+            - C++
+      - subtitle_left: Other
+        list:
+            - Mac OS X
+            - Unix
+            - Adobe Photoshop
+            - Illustrator
+            - Premiere Pro
+            - Final Cut Pro
+
+    leadership:
+
+      - title_left: Web Tier Leader
+        subtitle_left: "[Innovative Design](http://www.innod.net)"
+        title_right: Fall 2014
+        info:
+          - Leading a team of ~10 developers and designers in building web sites and brands for clients.
+
+      - title_left: Community Relations Officer
+        subtitle_left: "[Innovative Design](http://www.innod.net)"
+        title_right: Fall 2014
+        info:
+          - Building relations between Innovative Design and other organizations on the Berkeley campus.
+          - Expanding non-profit and charity work for the club.

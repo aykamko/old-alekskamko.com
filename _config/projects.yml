@@ -1,0 +1,36 @@
+projects:
+
+  - name: uguru.me
+    url: http://berkeley.uguru.me
+    repo: 
+    image: uguru.svg
+    description: >
+        A growing Berkeley tutoring startup that I worked on in Fall 2013.
+        As Lead Engineer, I developed the [Flask](http://flask.pocoo.org/) backend
+        for the site. Some tools I used include [Heroku](http://heroku.com/), 
+        [SQLAlchemy](http://www.sqlalchemy.org/), and [PostgreSQL](http://www.postgresql.org/).
+        I played a significant role in front-end development as well, working on
+        responsive design and form validation. Uguru is now part of the
+        [500 Startups](http://500.co/ugurume) accelerator.
+
+  - name: Bump
+    url: http://tiny.cc/fbump
+    repo: https://github.com/aykamko/Bump
+    image: fbump.png
+    description: >
+        My hack for Camp Hackathona at Facebook during Summer 2013. The idea 
+        is simple: bump phones with another person and be thrown to their Facebook.
+        We made this before Apple added NFC to their phones, so instead we use
+        accelerometers to determine a "bump", and then MongoDB's geospatial
+        queries to determine which two phones bumped. We built both an HTML5 app and a
+        standalone iOS application.
+
+  - name: Resistor Reader
+    url: https://play.google.com/store/apps/details?id=kamkowarrier.collab.resistorreader
+    repo: https://github.com/aykamko/ResistorReader
+    image: resistor_reader.png
+    description: >
+        An Android application for working with resistor values. 
+        It's simple, small, and user-friendly -- and open source! This was my first mobile project, as
+        well as my first Java project. I had zero experience with either going into it.
+        The app is published to the Google Play Store.

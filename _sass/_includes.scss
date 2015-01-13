@@ -1,0 +1,20 @@
+footer {
+    font-size: $tiny-font-size;
+    height: (2 * $spacing-unit);
+    width: 800px;
+    display: table;
+    margin: 0 auto;
+
+    .container {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+    }
+}

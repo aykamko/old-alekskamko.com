@@ -2,12 +2,20 @@
 layout: default
 ---
 
+<section class="intro">
+  <div class="container">
+      <img class="portrait" src="{{ "static/img/portrait.jpg" | prepend: site.baseurl }}">
+      <div class="blurb">
+        <h1>Hi!</h1>
+        <h2>I'm Aleks Kamko.</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="aboutme">
   <div class="container">
-    <div class="portrait-div">
-      <img src="{{ "static/img/portrait.jpg" | prepend: site.baseurl }}">
-    </div>
-    <div class="blurb">Hi! I'm a developer living in the Bay Area.</div>
+    <div class="blurb">I'm a student and developer living in the Bay Area.</div>
     <div class="console">
       <span class="gp">>>></span> <span class="kn">from</span> <span class="nn">aboutme</span> <span class="kn">import</span><span class="o"> * </span>
       <br/><br/>
@@ -26,5 +34,50 @@ layout: default
       {% unless forloop.last %}<br/><br/>{% endunless %}
       {% endfor %}
     </div>
+  </div>
+</section>
+
+<section class="projects">
+  <div class="container">
+    <div class="blurb">I truly love side projects. Here are some interesting ones.</div>
+    {% for project in site.projects %}
+    <div class="project">
+      <div class="project-img-div">
+        <img src="{{ project.image | prepend: "static/img/" | prepend: site.baseurl}}">
+      </div>
+      <div class="project-desc">
+        <h1>{% if project.url %}<a href="{{ project.url }}">{% endif %}{{ project.name }}{% if project.url %}</a>{% endif %}</h1>
+        <p>{{ project.description | markdownify }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="resume">
+  <div class="container">
+    <div class="blurb">Below is an expanded resume. You can grab a pdf <a href="http://alekskamko.com/static/downloads/alekskamko_resume.pdf">here</a>.</div>
+    {% for section in site.resume %}
+    <div class="resume-section">
+      <h2 class="section-title">{{ section[0] | capitalize }}</h2>
+      {% for sub_section in section[1] %}
+      <div class="resume-subsection">
+        <div class="title-row">{% if sub_section.title_left %}<span class="title-left">{{ sub_section.title_left | markdownify | stripp }}</span>{% endif %}<span class="title-right">{% if sub_section.title_right %}{{ sub_section.title_right | markdownify | stripp }}{% endif %}</div>
+        <div class="title-row">{% if sub_section.subtitle_left %}<span class="title-left">{{ sub_section.subtitle_left | markdownify | stripp }}</span>{% endif %}</div>
+        {% if sub_section.info %}
+        <ul>
+          {% for item in sub_section.info %}
+          <li>{{ item | markdownify | stripp }}</li>
+          {% endfor %}
+        </ul>
+        {% elsif sub_section.list %}
+        <ul>
+          <li>{{ sub_section.list | join: ", " }}</li>
+        </ul>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
   </div>
 </section>

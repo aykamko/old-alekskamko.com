@@ -71,7 +71,6 @@ body {
 a {
     color: $link-color;
     text-decoration: none;
-    &:visited { color: darken($link-color, 15%); }
     &:hover { text-decoration: underline; }
 }
 
@@ -92,6 +91,11 @@ h1, h2, h3, h4, h5, h6 {
     line-height: $base-line-height * 1.1;
 }
 
+h1 { font-size: 38px; }
+h2 { font-size: 32px; }
+h3 { font-size: 26px; }
+h4 { font-size: 20px; }
+
 //-----------------------------------------------------------------------------
 // Mixins, global classes, and functions
 //-----------------------------------------------------------------------------
@@ -111,22 +115,6 @@ h1, h2, h3, h4, h5, h6 {
     @media screen and (max-width: $device) {
         @content;
     }
-}
-
-.wrapper {
-    max-width: ($content-width + ($side-padding * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $side-padding;
-    padding-left: $side-padding;
-    @include clearfix;
-
-    // @include media-query($on-laptop) {
-    //     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    //     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    //     padding-right: $spacing-unit / 2;
-    //     padding-left: $spacing-unit / 2;
-    // }
 }
 
 @function strip-units($number) {
