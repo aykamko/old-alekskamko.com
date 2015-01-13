@@ -1,5 +1,6 @@
 //-----------------------------------------------------------------------------
 // CSS Reset
+// http://meyerweb.com/eric/tools/css/reset/ 
 //-----------------------------------------------------------------------------
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -43,92 +44,57 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 
 //-----------------------------------------------------------------------------
-// Base
+// Box sizing
 //-----------------------------------------------------------------------------
-
 html {
     box-sizing: border-box;
-    font-family: $base-font-family;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-a {
-    text-decoration: none;
+//-----------------------------------------------------------------------------
+// Basic styling
+//-----------------------------------------------------------------------------
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 400;
+    color: $text-color;
+    -webkit-text-size-adjust: 100%;
+}
 
-    &:hover {
-        text-decoration: underline;
-    }
+a {
+    color: $link-color;
+    text-decoration: none;
+    &:visited { color: darken($link-color, 15%); }
+    &:hover { text-decoration: underline; }
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul, ol {
+    margin-left: $spacing-unit;
+}
+li {
+    > ul, > ol { margin-bottom: 0; }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  line-height: 1.1;
+    font-weight: 700;
+    line-height: $base-line-height * 1.1;
 }
 
-h1, h2, h3 {
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-h4, h5, h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-h1 { font-size: 38px; }
-h2 { font-size: 32px; }
-h3 { font-size: 26px; }
-h4 { font-size: 20px; }
-
+//-----------------------------------------------------------------------------
+// Mixins, global classes, and functions
+//-----------------------------------------------------------------------------
 @mixin clearfix {
     &:after {
         content: "";
@@ -137,89 +103,32 @@ h4 { font-size: 20px; }
     }
 }
 
-.section {
-    width: 100%;
-    padding: 100px 8px;
+@mixin vertical-spacer {
+    margin-bottom: $spacing-unit;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.heading {
-    @extend .section;
-    background: $pantone-gossamer-green;
-
-    .heading-box {
-        @extend .container;
-
-        .portrait {
-            float: left;
-            max-width: 300px;
-            border-radius: 50%;
-        }
-
-        .heading-text {
-            display: table-cell;
-            vertical-align: middle;
-            height: 300px;
-            padding-left: 40px;
-
-            h1 {
-                margin: 0;
-                font-size: 68px;
-            }
-            h2 {
-                margin: 0;
-                font-size: 46px;
-            }
-        }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
     }
+}
 
+.wrapper {
+    max-width: ($content-width + ($side-padding * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $side-padding;
+    padding-left: $side-padding;
     @include clearfix;
+
+    // @include media-query($on-laptop) {
+    //     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    //     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    //     padding-right: $spacing-unit / 2;
+    //     padding-left: $spacing-unit / 2;
+    // }
 }
 
-.aboutme {
-    @extend .section;
-    padding-top: 50px;
-    background: $pantone-purple-impression;
-
-    .blurb {
-        text-align: center;
-        margin-bottom: 42px;
-        color: white;
-    }
-
-    .console {
-        @extend .highlight;
-        @extend .container;
-        padding: 35px;
-        border-top: 20px solid #e5e5e5;
-        border-radius: 4px;
-        font-family: $code-font;
-        font-size: 13px;
-        letter-spacing: 0.2px;
-        line-height: 20px;
-
-        @media screen and (max-width: 696px) {
-            padding: (35 / 680) * 100%;
-        }
-
-        p { 
-            display: inline-block;
-            margin: 0;
-        }
-
-        a {
-            color: #81a2be;
-        }
-
-        .indent {
-            display: inline-block;
-            padding-left: 32px;
-            text-indent: -16px;
-        }
-    }
+@function strip-units($number) {
+    @return $number / ($number * 0 + 1);
 }
-

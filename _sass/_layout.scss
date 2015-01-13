@@ -1,0 +1,53 @@
+.section {
+    width: 100%;
+    padding: $section-padding $side-padding;
+
+    .container {
+        max-width: $content-width;
+        margin: 0 auto;
+    }
+}
+
+.aboutme {
+    @extend .section;
+    background: $pantone-purple-impression;
+
+    .portrait-div {
+        max-width: 400px + ($spacing-unit * 2);
+        padding: 0 $spacing-unit;
+        margin: 0 auto;
+        @include vertical-spacer;
+
+        > img {
+            border-radius: 50%;
+        }
+    }
+
+    .blurb {
+        text-align: center;
+        color: white;
+        @include vertical-spacer;
+    }
+
+    .console {
+        @extend .highlight;
+        $console-padding: 35px;
+        padding: $console-padding;
+        border-top: 20px solid #e5e5e5;
+        border-radius: 4px;
+        font-family: $code-font-family;
+        font-size: $code-font-size;
+        letter-spacing: $code-letter-spacing;
+        line-height: $code-line-height;
+
+        @include media-query($on-mobile) {
+            padding: strip-units((($console-padding * 2) / ($on-mobile - (2 * $side-padding))) / 2) * 100%;
+        }
+
+        > .indent {
+            display: inline-block;
+            padding-left: 32px;
+            text-indent: -16px;
+        }
+    }
+}

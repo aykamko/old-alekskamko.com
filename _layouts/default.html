@@ -5,17 +5,14 @@
 
   <body>
 
+    {% comment include header.html %}{% endcomment %}
 
     <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      {{ content }}
     </div>
 
+    {% comment include footer.html %}{% endcomment %}
 
   </body>
 
 </html>
-
-{% comment include header.html %}{% endcomment %}
-{% comment include footer.html %}{% endcomment %}

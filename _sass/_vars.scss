@@ -1,27 +1,25 @@
-$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family:          'Quattrocento Sans', Helvetica, Arial, sans-serif;
+$base-font-size:            18px;
+$small-font-size:           $base-font-size * 0.875;
+$base-line-height:          1;
+$text-color:                #111111;
+$link-color:                #81a2be;
 
-$spacing-unit:     30px;
+$section-padding:           50px;
+$side-padding:              8px;
+$spacing-unit:              40px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$grey-color:                #828282;
+$grey-color-light:          lighten($grey-color, 40%);
+$grey-color-dark:           darken($grey-color, 25%);
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$code-font-family:          Monaco, monospace;
+$code-font-size:            13px;
+$code-letter-spacing:       0.2px;
+$code-line-height:          1.7;
 
-$code-font:        Monaco, serif;
-$code-bg-color:    #1d1f21;
-$code-text:        #c5c8c6;
+$pantone-purple-impression: #8690b8;
 
-$pantone-gossamer-green:      #afd0be;
-$pantone-purple-impression:   #8690b8;
+$content-width:             800px;
 
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-mobile:                 600px;
