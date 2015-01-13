@@ -162,7 +162,7 @@ h4 {
     padding: 35px;
     border-top: 20px solid #e5e5e5;
     border-radius: 4px;
-    font-family: Monaco, serif;
+    font-family: Monaco, monospace;
     font-size: 13px;
     letter-spacing: 0.2px;
     line-height: 20px; }
