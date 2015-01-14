@@ -139,7 +139,7 @@ h4 {
 .intro {
   background: #444c6b; }
   .intro .container {
-    max-width: 685px; }
+    max-width: 657px; }
     .intro .container .portrait-div {
       max-width: 350px;
       margin-right: 40px;
@@ -155,7 +155,7 @@ h4 {
         font-size: 80px;
         text-indent: -3px; }
       .intro .container .blurb h2 {
-        font-size: 40px; }
+        font-size: 36px; }
 
 .about {
   background: #8690b8; }
