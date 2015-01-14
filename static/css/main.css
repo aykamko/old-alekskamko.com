@@ -99,15 +99,15 @@ h4 {
     visibility: visible;
     opacity: 0.3; }
 
-.section, .intro, .about, .projects, .resume {
+.section, .intro, .about, .projects, .resume, footer {
   width: 100%;
   padding: 50px 50px; }
   @media screen and (max-width: 650px) {
-    .section, .intro, .about, .projects, .resume {
+    .section, .intro, .about, .projects, .resume, footer {
       padding-left: 7.69231%;
       padding-right: 7.69231%; } }
   @media screen and (max-width: 450px) {
-    .section, .intro, .about, .projects, .resume {
+    .section, .intro, .about, .projects, .resume, footer {
       padding-left: 8px;
       padding-right: 8px; } }
 
@@ -176,11 +176,11 @@ h4 {
     vertical-align: middle; }
   .projects .project .project-img-div {
     width: 350px;
-    border: 8px solid #81a2be;
-    border-radius: 50%; }
+    border-radius: 50%;
+    background: white; }
     .projects .project .project-img-div > img {
       border-radius: 50%;
-      width: 334px; }
+      width: 350px; }
   .projects .project:nth-child(even) .project-img-div {
     float: left;
     margin-right: 40px; }
@@ -269,15 +269,13 @@ nav {
     visibility: hidden; }
     nav .nav .nav-list {
       margin-top: 75px;
+      opacity: 0;
+      line-height: 3;
       -moz-transition: all 0.25s;
       -o-transition: all 0.25s;
       -ms-transition: all 0.25s;
       -webkit-transition: all 0.25s;
-      transition: all 0.25s;
-      opacity: 0;
-      line-height: 3; }
-      nav .nav .nav-list > span {
-        display: block; }
+      transition: all 0.25s; }
       nav .nav .nav-list > li > a {
         color: black; }
     nav .nav:before {
@@ -331,18 +329,30 @@ footer {
   background: white;
   font-size: 14px;
   height: 100px;
-  width: 800px;
-  display: table;
-  margin: 0 auto; }
-  footer .container {
-    padding: 0 8px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center; }
-    footer .container .left {
-      float: left; }
-    footer .container .right {
-      float: right; }
+  padding-top: 0;
+  padding-bottom: 0; }
+  footer .wrapper {
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto; }
+    footer .wrapper .table {
+      display: table;
+      height: 100%;
+      width: 100%; }
+      footer .wrapper .table .footer-container {
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center; }
+        footer .wrapper .table .footer-container:after {
+          content: "";
+          display: table;
+          clear: both; }
+        footer .wrapper .table .footer-container .left {
+          float: left; }
+        footer .wrapper .table .footer-container .right {
+          float: right;
+          text-align: right; }
 
 /**
  * Syntax highlighting styles
