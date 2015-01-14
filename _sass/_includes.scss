@@ -9,16 +9,16 @@ nav {
         .nav-button-div {
             background: $nav-bg-color;
             width: $nav-button-div-size;
+            height: $nav-button-div-size;
             position: absolute;
             top: ($nav-height / 2) - ($nav-button-div-size / 2);
             right: ($nav-height / 2) - ($nav-button-div-size / 2);
             border-radius: 50%;
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
+            display: table;
 
             .nav-button {
-                display: block;
+                display: table-cell;
+                vertical-align: middle;
                 cursor: pointer;
                 font-size: 28px;
                 position: relative;
@@ -28,6 +28,17 @@ nav {
                 &.active {
                     @include transition(all 0.5s);
                     @include transform(rotate(90deg));
+                }
+
+                .hbar {
+                    background: $text-color;
+                    width: 20px;
+                    height: 3px;
+                    margin: 0 auto;
+
+                    &:not(:last-child) {
+                        margin-bottom: 4px;
+                    }
                 }
             }
         }
