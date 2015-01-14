@@ -274,16 +274,16 @@ nav {
     width: 100%; }
     nav .nav-container .nav-button-div {
       background: #70b2a0;
-      width: 47px;
+      width: 50px;
+      height: 50px;
       position: absolute;
-      top: 14px;
-      right: 14px;
+      top: 12.5px;
+      right: 12.5px;
       border-radius: 50%;
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center; }
+      display: table; }
       nav .nav-container .nav-button-div .nav-button {
-        display: block;
+        display: table-cell;
+        vertical-align: middle;
         cursor: pointer;
         font-size: 28px;
         position: relative;
@@ -333,6 +333,13 @@ nav {
           -ms-transform: rotate(90deg);
           -webkit-transform: rotate(90deg);
           transform: rotate(90deg); }
+        nav .nav-container .nav-button-div .nav-button .hbar {
+          background: #111111;
+          width: 20px;
+          height: 3px;
+          margin: 0 auto; }
+          nav .nav-container .nav-button-div .nav-button .hbar:not(:last-child) {
+            margin-bottom: 4px; }
   nav .nav {
     position: fixed;
     overflow: hidden;
@@ -395,11 +402,11 @@ nav {
         color: white; }
     nav .nav:before {
       z-index: -1;
-      width: 47px;
-      height: 47px;
+      width: 50px;
+      height: 50px;
       position: absolute;
-      top: 14px;
-      right: 14px;
+      top: 12.5px;
+      right: 12.5px;
       background: #70b2a0;
       content: "";
       border-radius: 50%;
