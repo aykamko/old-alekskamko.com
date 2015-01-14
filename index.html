@@ -16,26 +16,43 @@
 
   <!-- Quattrocento Sans -->
   <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 </head>
 
 
   <body>
 
-    
+    <nav>
+  <div class="nav">
+    <ul class="nav-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+    </ul>
+  </div>
+  <div class="nav-container">
+    <div class="nav-button-div">
+      <span class="nav-button">☰</span>
+    </div>
+  </div>
+</nav>
+
 
     <div class="page-content">
-      <section class="intro">
+      <div class="nav-darken"></div>
+      <section id="intro" class="intro">
   <div class="container">
-      <img class="portrait" src="static/img/portrait.jpg">
-      <div class="blurb">
-        <h1>Hi!</h1>
-        <h2>I'm Aleks Kamko.</h2>
-      </div>
+    <img class="portrait" src="static/img/portrait.jpg">
+    <div class="blurb">
+      <h1>Hi!</h1>
+      <h2>I'm Aleks Kamko.</h2>
     </div>
   </div>
 </section>
 
-<section class="aboutme">
+<section id="about" class="about">
   <div class="container">
     <div class="blurb">I'm a student and developer living in the Bay Area.</div>
     <div class="console">
@@ -95,7 +112,7 @@
   </div>
 </section>
 
-<section class="projects">
+<section id="projects" class="projects">
   <div class="container">
     <div class="blurb">I truly love side projects. Here are some interesting ones.</div>
     
@@ -135,7 +152,7 @@
   </div>
 </section>
 
-<section class="resume">
+<section id="resume" class="resume">
   <div class="container">
     <div class="blurb">Below is an expanded resume. You can grab a pdf <a href="http://alekskamko.com/static/downloads/alekskamko_resume.pdf">here</a>.</div>
     
@@ -264,7 +281,7 @@
       
       <div class="resume-subsection">
         <div class="title-row"><span class="title-right"></div>
-        <div class="title-row"><span class="title-left">Experienced</span></div>
+        <div class="title-row"><span class="title-left">Experience</span></div>
         
         <ul>
           <li>Flask, Node.js, C, SQL/MySQL, mercurial, bash</li>
@@ -344,5 +361,25 @@
 
 
   </body>
+
+  <script>
+jQuery.extend( jQuery.easing, {
+  easeInOutCubic: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t*t + b;
+		return c/2*((t-=2)*t*t + 2) + b;
+	},
+});
+$('.nav-button').on('click', function() {
+  $('.nav-button, .nav-darken, .nav').toggleClass('active');
+  return false;
+});
+$('.nav-list > li > a').on('click', function(e) {
+  var tag = $(this.getAttribute('href'));
+  $('.nav-button, .nav-darken, .nav').toggleClass('active');
+  $('html, body').animate({scrollTop: tag.offset().top}, 750, 'easeInOutCubic');
+  return false;
+});
+</script>
+
 
 </html>

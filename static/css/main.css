@@ -87,7 +87,19 @@ h3 {
 h4 {
   font-size: 20px; }
 
-.section, .intro, .aboutme, .projects, .resume {
+.nav-darken {
+  position: fixed;
+  background: black;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s; }
+  .nav-darken.active {
+    visibility: visible;
+    opacity: 0.3; }
+
+.section, .intro, .about, .projects, .resume {
   width: 100%;
   padding: 50px 8px; }
 
@@ -100,7 +112,7 @@ h4 {
     clear: both; }
 
 .intro {
-  background: #ffddd3; }
+  background: #444c6b; }
   .intro .portrait {
     max-width: 480px;
     padding-right: 40px;
@@ -109,20 +121,21 @@ h4 {
   .intro .blurb {
     height: 400px;
     display: table-cell;
-    vertical-align: middle; }
+    vertical-align: middle;
+    color: white; }
     .intro .blurb h1 {
       font-size: 70px;
       text-indent: -3px; }
     .intro .blurb h2 {
       font-size: 43px; }
 
-.aboutme {
+.about {
   background: #8690b8; }
-  .aboutme .blurb {
+  .about .blurb {
     text-align: center;
     color: white;
     margin-bottom: 40px; }
-  .aboutme .console {
+  .about .console {
     padding: 35px;
     border-top: 20px solid #e5e5e5;
     border-radius: 4px;
@@ -131,15 +144,15 @@ h4 {
     letter-spacing: 0.2px;
     line-height: 1.7; }
     @media screen and (max-width: 600px) {
-      .aboutme .console {
+      .about .console {
         padding: 5.99315%; } }
-    .aboutme .console > .indent {
+    .about .console > .indent {
       display: inline-block;
       padding-left: 32px;
       text-indent: -16px; }
 
 .projects {
-  background: #e8e8e8; }
+  background: #d3dcff; }
   .projects .blurb {
     text-align: center;
     margin-bottom: 40px; }
@@ -168,7 +181,7 @@ h4 {
     margin-left: 40px; }
 
 .resume {
-  background: whitesmoke; }
+  background: #edf0ff; }
   .resume .blurb {
     text-align: center;
     margin-bottom: 40px; }
@@ -190,13 +203,93 @@ h4 {
   .resume .resume-section .resume-subsection > ul {
     list-style-type: circle; }
 
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+  nav .nav-container {
+    width: 100%; }
+    nav .nav-container .nav-button-div {
+      background: #70b2a0;
+      width: 47px;
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      border-radius: 50%;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+      nav .nav-container .nav-button-div .nav-button {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+        transition: transform 0.25s;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        nav .nav-container .nav-button-div .nav-button.active {
+          transform: rotate(90deg);
+          transition: transform 0.5s; }
+  nav .nav {
+    position: fixed;
+    overflow: hidden;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    transition: all 0.5s;
+    visibility: hidden; }
+    nav .nav .nav-list {
+      margin-top: 75px;
+      transition: all 0.25s;
+      opacity: 0;
+      line-height: 3; }
+      nav .nav .nav-list > span {
+        display: block; }
+      nav .nav .nav-list > li > a {
+        color: black; }
+    nav .nav:before {
+      z-index: -1;
+      width: 47px;
+      height: 47px;
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: #70b2a0;
+      content: "";
+      border-radius: 50%;
+      -webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+    nav .nav.active {
+      transition: all 0.5s;
+      display: block;
+      visibility: visible; }
+      nav .nav.active .nav-list {
+        transform: translateX(5px);
+        transition: all 0.5s;
+        opacity: 1; }
+      nav .nav.active:before {
+        height: 2000px;
+        width: 2000px;
+        border-radius: 50%;
+        margin-right: -1000px;
+        margin-top: -1000px;
+        -webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+
 footer {
+  background: white;
   font-size: 14px;
-  height: 80px;
+  height: 100px;
   width: 800px;
   display: table;
   margin: 0 auto; }
   footer .container {
+    padding: 0 8px;
     display: table-cell;
     vertical-align: middle;
     text-align: center; }
@@ -210,7 +303,7 @@ footer {
  * tomorrow-pygments by MozMorris 
  * https://github.com/MozMorris/tomorrow-pygments
  */
-.highlight, .aboutme .console {
+.highlight, .about .console {
   background: #1d1f21;
   color: #c5c8c6;
   /* Comment */
@@ -276,134 +369,134 @@ footer {
   /* Name.Variable.Global */
   /* Name.Variable.Instance */
   /* Literal.Number.Integer.Long */ }
-  .highlight .hll, .aboutme .console .hll {
+  .highlight .hll, .about .console .hll {
     background-color: #373b41; }
-  .highlight .c, .aboutme .console .c {
+  .highlight .c, .about .console .c {
     color: #969896; }
-  .highlight .err, .aboutme .console .err {
+  .highlight .err, .about .console .err {
     color: #cc6666; }
-  .highlight .k, .aboutme .console .k {
+  .highlight .k, .about .console .k {
     color: #b294bb; }
-  .highlight .l, .aboutme .console .l {
+  .highlight .l, .about .console .l {
     color: #de935f; }
-  .highlight .n, .aboutme .console .n {
+  .highlight .n, .about .console .n {
     color: #c5c8c6; }
-  .highlight .o, .aboutme .console .o {
+  .highlight .o, .about .console .o {
     color: #8abeb7; }
-  .highlight .p, .aboutme .console .p {
+  .highlight .p, .about .console .p {
     color: #c5c8c6; }
-  .highlight .cm, .aboutme .console .cm {
+  .highlight .cm, .about .console .cm {
     color: #969896; }
-  .highlight .cp, .aboutme .console .cp {
+  .highlight .cp, .about .console .cp {
     color: #969896; }
-  .highlight .c1, .aboutme .console .c1 {
+  .highlight .c1, .about .console .c1 {
     color: #969896; }
-  .highlight .cs, .aboutme .console .cs {
+  .highlight .cs, .about .console .cs {
     color: #969896; }
-  .highlight .gd, .aboutme .console .gd {
+  .highlight .gd, .about .console .gd {
     color: #cc6666; }
-  .highlight .ge, .aboutme .console .ge {
+  .highlight .ge, .about .console .ge {
     font-style: italic; }
-  .highlight .gh, .aboutme .console .gh {
+  .highlight .gh, .about .console .gh {
     color: #c5c8c6;
     font-weight: bold; }
-  .highlight .gi, .aboutme .console .gi {
+  .highlight .gi, .about .console .gi {
     color: #b5bd68; }
-  .highlight .gp, .aboutme .console .gp {
+  .highlight .gp, .about .console .gp {
     color: #969896;
     font-weight: bold; }
-  .highlight .gs, .aboutme .console .gs {
+  .highlight .gs, .about .console .gs {
     font-weight: bold; }
-  .highlight .gu, .aboutme .console .gu {
+  .highlight .gu, .about .console .gu {
     color: #8abeb7;
     font-weight: bold; }
-  .highlight .kc, .aboutme .console .kc {
+  .highlight .kc, .about .console .kc {
     color: #b294bb; }
-  .highlight .kd, .aboutme .console .kd {
+  .highlight .kd, .about .console .kd {
     color: #b294bb; }
-  .highlight .kn, .aboutme .console .kn {
+  .highlight .kn, .about .console .kn {
     color: #8abeb7; }
-  .highlight .kp, .aboutme .console .kp {
+  .highlight .kp, .about .console .kp {
     color: #b294bb; }
-  .highlight .kr, .aboutme .console .kr {
+  .highlight .kr, .about .console .kr {
     color: #b294bb; }
-  .highlight .kt, .aboutme .console .kt {
+  .highlight .kt, .about .console .kt {
     color: #f0c674; }
-  .highlight .ld, .aboutme .console .ld {
+  .highlight .ld, .about .console .ld {
     color: #b5bd68; }
-  .highlight .m, .aboutme .console .m {
+  .highlight .m, .about .console .m {
     color: #de935f; }
-  .highlight .s, .aboutme .console .s {
+  .highlight .s, .about .console .s {
     color: #b5bd68; }
-  .highlight .na, .aboutme .console .na {
+  .highlight .na, .about .console .na {
     color: #81a2be; }
-  .highlight .nb, .aboutme .console .nb {
+  .highlight .nb, .about .console .nb {
     color: #c5c8c6; }
-  .highlight .nc, .aboutme .console .nc {
+  .highlight .nc, .about .console .nc {
     color: #f0c674; }
-  .highlight .no, .aboutme .console .no {
+  .highlight .no, .about .console .no {
     color: #cc6666; }
-  .highlight .nd, .aboutme .console .nd {
+  .highlight .nd, .about .console .nd {
     color: #8abeb7; }
-  .highlight .ni, .aboutme .console .ni {
+  .highlight .ni, .about .console .ni {
     color: #c5c8c6; }
-  .highlight .ne, .aboutme .console .ne {
+  .highlight .ne, .about .console .ne {
     color: #cc6666; }
-  .highlight .nf, .aboutme .console .nf {
+  .highlight .nf, .about .console .nf {
     color: #81a2be; }
-  .highlight .nl, .aboutme .console .nl {
+  .highlight .nl, .about .console .nl {
     color: #c5c8c6; }
-  .highlight .nn, .aboutme .console .nn {
+  .highlight .nn, .about .console .nn {
     color: #f0c674; }
-  .highlight .nx, .aboutme .console .nx {
+  .highlight .nx, .about .console .nx {
     color: #81a2be; }
-  .highlight .py, .aboutme .console .py {
+  .highlight .py, .about .console .py {
     color: #c5c8c6; }
-  .highlight .nt, .aboutme .console .nt {
+  .highlight .nt, .about .console .nt {
     color: #8abeb7; }
-  .highlight .nv, .aboutme .console .nv {
+  .highlight .nv, .about .console .nv {
     color: #cc6666; }
-  .highlight .ow, .aboutme .console .ow {
+  .highlight .ow, .about .console .ow {
     color: #8abeb7; }
-  .highlight .w, .aboutme .console .w {
+  .highlight .w, .about .console .w {
     color: #c5c8c6; }
-  .highlight .mf, .aboutme .console .mf {
+  .highlight .mf, .about .console .mf {
     color: #de935f; }
-  .highlight .mh, .aboutme .console .mh {
+  .highlight .mh, .about .console .mh {
     color: #de935f; }
-  .highlight .mi, .aboutme .console .mi {
+  .highlight .mi, .about .console .mi {
     color: #de935f; }
-  .highlight .mo, .aboutme .console .mo {
+  .highlight .mo, .about .console .mo {
     color: #de935f; }
-  .highlight .sb, .aboutme .console .sb {
+  .highlight .sb, .about .console .sb {
     color: #b5bd68; }
-  .highlight .sc, .aboutme .console .sc {
+  .highlight .sc, .about .console .sc {
     color: #c5c8c6; }
-  .highlight .sd, .aboutme .console .sd {
+  .highlight .sd, .about .console .sd {
     color: #969896; }
-  .highlight .s2, .aboutme .console .s2 {
+  .highlight .s2, .about .console .s2 {
     color: #b5bd68; }
-  .highlight .se, .aboutme .console .se {
+  .highlight .se, .about .console .se {
     color: #de935f; }
-  .highlight .sh, .aboutme .console .sh {
+  .highlight .sh, .about .console .sh {
     color: #b5bd68; }
-  .highlight .si, .aboutme .console .si {
+  .highlight .si, .about .console .si {
     color: #de935f; }
-  .highlight .sx, .aboutme .console .sx {
+  .highlight .sx, .about .console .sx {
     color: #b5bd68; }
-  .highlight .sr, .aboutme .console .sr {
+  .highlight .sr, .about .console .sr {
     color: #b5bd68; }
-  .highlight .s1, .aboutme .console .s1 {
+  .highlight .s1, .about .console .s1 {
     color: #b5bd68; }
-  .highlight .ss, .aboutme .console .ss {
+  .highlight .ss, .about .console .ss {
     color: #b5bd68; }
-  .highlight .bp, .aboutme .console .bp {
+  .highlight .bp, .about .console .bp {
     color: #c5c8c6; }
-  .highlight .vc, .aboutme .console .vc {
+  .highlight .vc, .about .console .vc {
     color: #cc6666; }
-  .highlight .vg, .aboutme .console .vg {
+  .highlight .vg, .about .console .vg {
     color: #cc6666; }
-  .highlight .vi, .aboutme .console .vi {
+  .highlight .vi, .about .console .vi {
     color: #cc6666; }
-  .highlight .il, .aboutme .console .il {
+  .highlight .il, .about .console .il {
     color: #de935f; }
