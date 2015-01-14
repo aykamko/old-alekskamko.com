@@ -138,21 +138,24 @@ h4 {
 
 .intro {
   background: #444c6b; }
-  .intro .portrait {
-    max-width: 480px;
-    padding-right: 40px;
-    float: left;
-    border-radius: 50%; }
-  .intro .blurb {
-    height: 400px;
-    display: table-cell;
-    vertical-align: middle;
-    color: white; }
-    .intro .blurb h1 {
-      font-size: 70px;
-      text-indent: -3px; }
-    .intro .blurb h2 {
-      font-size: 43px; }
+  .intro .container {
+    max-width: 685px; }
+    .intro .container .portrait-div {
+      max-width: 350px;
+      margin-right: 40px;
+      float: left; }
+      .intro .container .portrait-div .portrait {
+        border-radius: 50%; }
+    .intro .container .blurb {
+      height: 350px;
+      display: table-cell;
+      vertical-align: middle;
+      color: white; }
+      .intro .container .blurb h1 {
+        font-size: 80px;
+        text-indent: -3px; }
+      .intro .container .blurb h2 {
+        font-size: 40px; }
 
 .about {
   background: #8690b8; }
