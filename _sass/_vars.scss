@@ -8,13 +8,18 @@ $text-color:                #111111;
 $link-color:                darken(#81a2be, 15%);
 $link-color-light:          lighten($link-color, 15%);
 
+
 $section-padding:           50px;
+$nav-height:                75px;
+$footer-height:             100px;
 $side-padding:              8px;
 $spacing-unit:              40px;
 
 $grey-color:                #828282;
 $grey-color-light:          lighten($grey-color, 40%);
 $grey-color-dark:           darken($grey-color, 25%);
+
+$nav-button-div-size:       47px;
 
 $code-font-family:          Monaco, monospace;
 $code-font-size:            13px;
@@ -23,6 +28,14 @@ $code-line-height:          1.7;
 
 $pantone-purple-impression: #8690b8;
 $triad-salmon:              #ffddd3;
+$complimentary-teal:        #70b2a0;
+
+$nav-bg-color:              $complimentary-teal;
+$intro-bg-color:            #444c6b;
+$about-bg-color:            $pantone-purple-impression;
+$projects-bg-color:         #d3dcff;
+$resume-bg-color:           #edf0ff;
+$footer-bg-color:           white;
 
 $content-width:             800px;
 

@@ -11,7 +11,7 @@
 
 .intro {
     @extend .section;
-    background: $triad-salmon;
+    background: $intro-bg-color;
 
     .portrait {
         max-width: 400px + ($spacing-unit * 2);
@@ -24,6 +24,8 @@
         height: 400px;
         display: table-cell;
         vertical-align: middle;
+        color: white;
+
         h1 { 
             font-size: 70px; 
             text-indent: -3px;
@@ -34,9 +36,9 @@
     }
 }
 
-.aboutme {
+.about {
     @extend .section;
-    background: $pantone-purple-impression;
+    background: $about-bg-color;
 
     .blurb {
         text-align: center;
@@ -69,7 +71,7 @@
 
 .projects {
     @extend .section;
-    background: lighten($grey-color, 40%);
+    background: $projects-bg-color;
 
     .blurb {
         text-align: center;
@@ -117,7 +119,7 @@
 
 .resume {
     @extend .section;
-    background: lighten($grey-color, 45%);
+    background: $resume-bg-color;
 
     .blurb {
         text-align: center;

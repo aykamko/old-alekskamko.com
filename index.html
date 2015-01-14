@@ -2,18 +2,17 @@
 layout: default
 ---
 
-<section class="intro">
+<section id="intro" class="intro">
   <div class="container">
-      <img class="portrait" src="{{ "static/img/portrait.jpg" | prepend: site.baseurl }}">
-      <div class="blurb">
-        <h1>Hi!</h1>
-        <h2>I'm Aleks Kamko.</h2>
-      </div>
+    <img class="portrait" src="{{ "static/img/portrait.jpg" | prepend: site.baseurl }}">
+    <div class="blurb">
+      <h1>Hi!</h1>
+      <h2>I'm Aleks Kamko.</h2>
     </div>
   </div>
 </section>
 
-<section class="aboutme">
+<section id="about" class="about">
   <div class="container">
     <div class="blurb">I'm a student and developer living in the Bay Area.</div>
     <div class="console">
@@ -37,7 +36,7 @@ layout: default
   </div>
 </section>
 
-<section class="projects">
+<section id="projects" class="projects">
   <div class="container">
     <div class="blurb">I truly love side projects. Here are some interesting ones.</div>
     {% for project in site.projects %}
@@ -54,7 +53,7 @@ layout: default
   </div>
 </section>
 
-<section class="resume">
+<section id="resume" class="resume">
   <div class="container">
     <div class="blurb">Below is an expanded resume. You can grab a pdf <a href="http://alekskamko.com/static/downloads/alekskamko_resume.pdf">here</a>.</div>
     {% for section in site.resume %}

@@ -1,0 +1,18 @@
+<script>
+jQuery.extend( jQuery.easing, {
+  easeInOutCubic: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t*t + b;
+		return c/2*((t-=2)*t*t + 2) + b;
+	},
+});
+$('.nav-button').on('click', function() {
+  $('.nav-button, .nav-darken, .nav').toggleClass('active');
+  return false;
+});
+$('.nav-list > li > a').on('click', function(e) {
+  var tag = $(this.getAttribute('href'));
+  $('.nav-button, .nav-darken, .nav').toggleClass('active');
+  $('html, body').animate({scrollTop: tag.offset().top}, 750, 'easeInOutCubic');
+  return false;
+});
+</script>

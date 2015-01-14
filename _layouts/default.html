@@ -5,14 +5,17 @@
 
   <body>
 
-    {% comment include header.html %}{% endcomment %}
+    {% include nav.html %}
 
     <div class="page-content">
+      <div class="nav-darken"></div>
       {{ content }}
     </div>
 
     {% include footer.html %}
 
   </body>
+
+  {% include foot.html %}
 
 </html>
