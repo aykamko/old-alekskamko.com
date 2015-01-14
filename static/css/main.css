@@ -139,15 +139,15 @@ h4 {
 .intro {
   background: #444c6b; }
   .intro .container {
-    max-width: 657px; }
+    max-width: 653px; }
     .intro .container .portrait-div {
-      max-width: 350px;
+      max-width: 346px;
       margin-right: 40px;
       float: left; }
       .intro .container .portrait-div .portrait {
         border-radius: 50%; }
     .intro .container .blurb {
-      height: 350px;
+      height: 346px;
       display: table-cell;
       vertical-align: middle;
       color: white; }
