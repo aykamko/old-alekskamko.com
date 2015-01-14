@@ -21,6 +21,9 @@ $('a[href*=#]').on('click', function(e) {
   return false;
 });
 
+// Make all anchors open new tabs
+$('a').attr('target', '_blank');
+
 // Re-arrange project divs
 (function () {
   var project_img_divs = $('.project-img-div');

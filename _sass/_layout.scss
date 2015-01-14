@@ -118,7 +118,9 @@
     }
 
     .project {
-        display: table;
+        @include min-media-query($on-tablet + 1px) {
+            display: table;
+        }
         @include clearfix;
         &:not(:last-child) {
             @include vertical-spacer;
@@ -143,13 +145,15 @@
 
         .project-img-div {
             $project-img-div-width: 350px;
-            width: $project-img-div-width;
+            max-width: $project-img-div-width;
             border-radius: 50%;
             @include min-media-query($on-tablet + 1px) {
+                width: $project-img-div-width;
                 display: table-cell;
                 vertical-align: middle;
             }
             @include media-query($on-tablet) {
+                padding: 0 $small-side-padding;
                 margin: 0 auto;
                 margin-bottom: $small-side-padding;
             }
