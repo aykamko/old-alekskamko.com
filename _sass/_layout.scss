@@ -118,16 +118,26 @@
     }
 
     .project {
+        display: table;
         @include clearfix;
         &:not(:last-child) {
             @include vertical-spacer;
         }
 
         .project-desc {
+            .project-name {
+                > * { display: inline-block; }
+            }
             @include min-media-query($on-tablet + 1px) {
-                height: 350px;
                 display: table-cell;
                 vertical-align: middle;
+            }
+        }
+
+        .table-spacer {
+            width: $spacing-unit;
+            @include media-query($on-tablet) {
+                display: none;
             }
         }
 
@@ -135,32 +145,19 @@
             $project-img-div-width: 350px;
             width: $project-img-div-width;
             border-radius: 50%;
-            background: white;
+            @include min-media-query($on-tablet + 1px) {
+                display: table-cell;
+                vertical-align: middle;
+            }
             @include media-query($on-tablet) {
                 margin: 0 auto;
-                margin-bottom: (2 * $small-side-padding);
+                margin-bottom: $small-side-padding;
             }
 
             > img {
+                background: white;
                 border-radius: 50%;
                 width: $project-img-div-width;
-            }
-        }
-
-        &:nth-child(even) {
-            .project-img-div {
-                @include min-media-query($on-tablet + 1px) {
-                    float: left;
-                    margin-right: $spacing-unit;
-                }
-            }
-        }
-        &:nth-child(odd) {
-            .project-img-div {
-                @include min-media-query($on-tablet + 1px) {
-                    float: right;
-                    margin-left: $spacing-unit;
-                }
             }
         }
     }

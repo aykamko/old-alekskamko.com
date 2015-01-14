@@ -1,31 +1,26 @@
 about:
 
-    - key: education
-      value:
-          university: UC Berkeley
-          major: Electrical Engineering and Computer Science
-          graduation: May 2016
-    - key: latest_work
-      value:
-          company: Facebook
-          team: Language Technology
-          term: Summer 2014
-    - key: interests
-      value:
-          - teaching
-          - music
-          - biking
-          - sick threads
-          - pretty websites
-          - super smash
-    - key: links
-      value:
-          - "[github](https://github.com/aykamko/){:target='_blank'}"
-          - "[linkedin](http://www.linkedin.com/in/aykamko){:target='_blank'}"
-          - "[facebook](http://fb.me/ayk){:target='_blank'}"
-          - "[spotify](http://open.spotify.com/user/mrpersonguy){:target='_blank'}"
-          - "[lastfm](http://www.last.fm/user/aykamko){:target='_blank'}"
-    - key: resume
-      value: "[alekskamko_resume.pdf](http://alekskamko.com/static/downloads/alekskamko_resume.pdf){:target='_blank'}"
-    - key: email
-      value: "[ak@alekskamko.com](mailto:ak@alekskamko.com)"
+    education:
+        university: UC Berkeley
+        major: Electrical Engineering and Computer Science
+        graduation: May 2016
+    latest_work:
+        company: Facebook
+        team: Language Technology
+        term: Summer 2014
+    interests:
+        - teaching
+        - music
+        - kimchi
+        - biking
+        - sick threads
+        - pretty websites
+        - super smash
+    links:
+        - "[github](https://github.com/aykamko/){:target='_blank'}"
+        - "[linkedin](http://www.linkedin.com/in/aykamko){:target='_blank'}"
+        - "[facebook](http://fb.me/ayk){:target='_blank'}"
+        - "[spotify](http://open.spotify.com/user/mrpersonguy){:target='_blank'}"
+        - "[lastfm](http://www.last.fm/user/aykamko){:target='_blank'}"
+    resume: "[alekskamko_resume.pdf](alekskamko_resume.pdf){:target='_blank'}"
+    email: "[ak@alekskamko.com](mailto:ak@alekskamko.com)"
