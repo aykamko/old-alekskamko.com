@@ -137,7 +137,7 @@ h4 {
     clear: both; }
 
 .intro {
-  background: #444c6b; }
+  background: #ffc9ba; }
   .intro .container {
     max-width: 653px; }
     .intro .container .portrait-div {
@@ -155,11 +155,10 @@ h4 {
     .intro .container .blurb {
       height: 346px;
       display: table-cell;
-      vertical-align: middle;
-      color: white; }
+      vertical-align: middle; }
       .intro .container .blurb h1 {
         font-size: 80px;
-        text-indent: -3px; }
+        text-indent: -4px; }
       .intro .container .blurb h2 {
         font-size: 36px; }
       @media screen and (max-width: 768px) {
@@ -167,11 +166,7 @@ h4 {
           display: block;
           height: inherit;
           text-align: center; }
-          .intro .container .blurb h1 {
-            display: inline-block;
-            font-size: 36px;
-            text-indent: -3px; }
-          .intro .container .blurb h2 {
+          .intro .container .blurb h1, .intro .container .blurb h2 {
             display: inline-block;
             font-size: 36px; } }
 
