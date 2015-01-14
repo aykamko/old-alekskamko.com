@@ -202,36 +202,40 @@ h4 {
   .projects .blurb {
     text-align: center;
     margin-bottom: 40px; }
-  .projects .project:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .projects .project:not(:last-child) {
-    margin-bottom: 40px; }
-  @media screen and (min-width: 769px) {
-    .projects .project .project-desc {
-      height: 350px;
-      display: table-cell;
-      vertical-align: middle; } }
-  .projects .project .project-img-div {
-    width: 350px;
-    border-radius: 50%;
-    background: white; }
-    @media screen and (max-width: 768px) {
-      .projects .project .project-img-div {
-        margin: 0 auto;
-        margin-bottom: 16px; } }
-    .projects .project .project-img-div > img {
-      border-radius: 50%;
-      width: 350px; }
-  @media screen and (min-width: 769px) {
-    .projects .project:nth-child(even) .project-img-div {
-      float: left;
-      margin-right: 40px; } }
-  @media screen and (min-width: 769px) {
-    .projects .project:nth-child(odd) .project-img-div {
-      float: right;
-      margin-left: 40px; } }
+  .projects .project {
+    display: table; }
+    .projects .project:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .projects .project:not(:last-child) {
+      margin-bottom: 40px; }
+    .projects .project .project-desc .project-name > * {
+      display: inline-block; }
+    @media screen and (min-width: 769px) {
+      .projects .project .project-desc {
+        display: table-cell;
+        vertical-align: middle; } }
+    .projects .project .table-spacer {
+      width: 40px; }
+      @media screen and (max-width: 768px) {
+        .projects .project .table-spacer {
+          display: none; } }
+    .projects .project .project-img-div {
+      width: 350px;
+      border-radius: 50%; }
+      @media screen and (min-width: 769px) {
+        .projects .project .project-img-div {
+          display: table-cell;
+          vertical-align: middle; } }
+      @media screen and (max-width: 768px) {
+        .projects .project .project-img-div {
+          margin: 0 auto;
+          margin-bottom: 8px; } }
+      .projects .project .project-img-div > img {
+        background: white;
+        border-radius: 50%;
+        width: 350px; }
 
 .resume {
   background: #edf0ff; }
@@ -354,11 +358,13 @@ nav {
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    visibility: hidden; }
-    nav .nav .nav-list {
-      margin-top: 75px;
-      opacity: 0;
-      line-height: 3;
+    visibility: hidden;
+    font-size: 22.5px; }
+    nav .nav a {
+      color: black;
+      text-decoration: none; }
+    nav .nav .fade-in {
+      position: relative;
       -moz-transition: all 0.25s;
       -o-transition: all 0.25s;
       -ms-transition: all 0.25s;
@@ -375,9 +381,20 @@ nav {
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
-      nav .nav .nav-list > li > a {
-        color: black; }
+      transform: translate3d(0, 0, 0);
+      opacity: 0; }
+    nav .nav .nav-list {
+      margin-top: 75px;
+      line-height: 3; }
+    nav .nav .brand {
+      position: relative;
+      top: 13.5px;
+      left: 40px; }
+      nav .nav .brand > a {
+        font-size: 28px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: white; }
     nav .nav:before {
       z-index: -1;
       width: 47px;
@@ -425,7 +442,7 @@ nav {
       transform: translate3d(0, 0, 0);
       display: block;
       visibility: visible; }
-      nav .nav.active .nav-list {
+      nav .nav.active .fade-in {
         -moz-transition: all 0.5s;
         -o-transition: all 0.5s;
         -ms-transition: all 0.5s;

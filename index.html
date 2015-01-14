@@ -26,11 +26,14 @@
 
     <nav>
   <div class="nav">
-    <ul class="nav-list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-    </ul>
+    <div class="fade-in">
+      <span class="brand"><a href="#intro">AK</a></span>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </div>
   </div>
   <div class="nav-container">
     <div class="nav-button-div">
@@ -81,7 +84,7 @@
       <br/>
       
       
-      ['<span class="s">teaching</span>', '<span class="s">music</span>', '<span class="s">biking</span>', '<span class="s">sick threads</span>', '<span class="s">pretty websites</span>', '<span class="s">super smash</span>']
+      ['<span class="s">teaching</span>', '<span class="s">music</span>', '<span class="s">kimchi</span>', '<span class="s">biking</span>', '<span class="s">sick threads</span>', '<span class="s">pretty websites</span>', '<span class="s">super smash</span>']
       
       <br/><br/>
       
@@ -97,7 +100,7 @@
       <br/>
       
       
-      '<span class="s"><a href="http://alekskamko.com/static/downloads/alekskamko_resume.pdf" target="_blank">alekskamko_resume.pdf</a></span>'
+      '<span class="s"><a href="alekskamko_resume.pdf" target="_blank">alekskamko_resume.pdf</a></span>'
       
       <br/><br/>
       
@@ -117,37 +120,73 @@
   <div class="container">
     <div class="blurb">I truly love side projects. Here are some interesting ones.</div>
     
+    
     <div class="project">
+      
       <div class="project-img-div">
         <img src="static/img/uguru.svg">
       </div>
+      <div class="table-spacer"></div>
+      
       <div class="project-desc">
-        <h1><a href="http://berkeley.uguru.me">uguru.me</a></h1>
+        <div class="project-name">
+          <h1>
+            <a href="http://berkeley.uguru.me">
+            uguru.me
+            </a>
+          </h1>
+          
+        </div>
         <p><p>A growing Berkeley tutoring startup that I worked on in Fall 2013. As Lead Engineer, I developed the <a href="http://flask.pocoo.org/">Flask</a> backend for the site. Some tools I used include <a href="http://heroku.com/">Heroku</a>,  <a href="http://www.sqlalchemy.org/">SQLAlchemy</a>, and <a href="http://www.postgresql.org/">PostgreSQL</a>. I played a significant role in front-end development as well, working on responsive design and form validation. Uguru is now part of the <a href="http://500.co/ugurume">500 Startups</a> accelerator.</p>
 </p>
       </div>
+      
     </div>
     
+    
     <div class="project">
-      <div class="project-img-div">
-        <img src="static/img/fbump.png">
-      </div>
+      
       <div class="project-desc">
-        <h1><a href="http://tiny.cc/fbump">Bump</a></h1>
+        <div class="project-name">
+          <h1>
+            <a href="http://tiny.cc/fbump">
+            Bump
+            </a>
+          </h1>
+          <a href="https://github.com/aykamko/Bump">[repo]</a>
+        </div>
         <p><p>My hack for Camp Hackathona at Facebook during Summer 2013. The idea  is simple: bump phones with another person and be thrown to their Facebook. We made this before Apple added NFC to their phones, so instead we use accelerometers to determine a “bump”, and then MongoDB’s geospatial queries to determine which two phones bumped. We built both an HTML5 app and a standalone iOS application.</p>
 </p>
       </div>
+      
+      <div class="table-spacer"></div>
+      <div class="project-img-div">
+        <img src="static/img/fbump.png">
+      </div>
+      
     </div>
     
+    
     <div class="project">
+      
       <div class="project-img-div">
         <img src="static/img/resistor_reader.png">
       </div>
+      <div class="table-spacer"></div>
+      
       <div class="project-desc">
-        <h1><a href="https://play.google.com/store/apps/details?id=kamkowarrier.collab.resistorreader">Resistor Reader</a></h1>
+        <div class="project-name">
+          <h1>
+            <a href="https://play.google.com/store/apps/details?id=kamkowarrier.collab.resistorreader">
+            Resistor Reader
+            </a>
+          </h1>
+          <a href="https://github.com/aykamko/ResistorReader">[repo]</a>
+        </div>
         <p><p>An Android application for working with resistor values.  It’s simple, small, and user-friendly – and open source! This was my first mobile project, as well as my first Java project. I had zero experience with either going into it. The app is published to the Google Play Store.</p>
 </p>
       </div>
+      
     </div>
     
   </div>
@@ -155,7 +194,7 @@
 
 <section id="resume" class="resume">
   <div class="container">
-    <div class="blurb">Below is an expanded resume. You can grab a pdf <a href="http://alekskamko.com/static/downloads/alekskamko_resume.pdf">here</a>.</div>
+    <div class="blurb">Below is an expanded resume. You can grab a pdf <a href="http://alekskamko.com/alekskamko_resume.pdf">here</a>.</div>
     
     <div class="resume-section">
       <h2 class="section-title">Experience</h2>
@@ -375,23 +414,66 @@
   </body>
 
   <script>
+// Add cubic easing to animations (didn't want to import all of jQuery UI)
 jQuery.extend( jQuery.easing, {
   easeInOutCubic: function (x, t, b, c, d) {
 		if ((t/=d/2) < 1) return c/2*t*t*t + b;
 		return c/2*((t-=2)*t*t + 2) + b;
 	},
 });
+
+// On-clicks for menu stuff
 $('.nav-button').on('click', function() {
   $('.nav-button, .nav').toggleClass('active');
   $('.page-content').toggleClass('darken');
   return false;
 });
-$('.nav-list > li > a').on('click', function(e) {
+$('a[href*=#]').on('click', function(e) {
   var tag = $(this.getAttribute('href'));
   $('.nav-button, .nav').toggleClass('active');
   $('.page-content').toggleClass('darken');
   $('html, body').animate({scrollTop: tag.offset().top}, 750, 'easeInOutCubic');
   return false;
+});
+
+// Re-arrange project divs
+(function () {
+  var project_img_divs = $('.project-img-div');
+  var parent_divs = project_img_divs.parent();
+  var img_div;
+  var par;
+  // http://stackoverflow.com/questions/18546067
+  function viewport_width() {
+      var e = window, 
+          a = 'inner';
+      if (!('innerWidth' in window)) {
+          a = 'client';
+          e = document.documentElement || document.body;
+      }
+      return e[a+'Width'];
+  }
+  $(window).resize(function () {
+    if (viewport_width() <= 768) {
+      for (var i = 0; i < project_img_divs.length; i++) {
+        img_div = $(project_img_divs[i]);
+        par = $(parent_divs[i]);
+        par.prepend(img_div);
+      }
+    } else {
+      for (var i = 0; i < project_img_divs.length; i++) {
+        img_div = $(project_img_divs[i]);
+        par = $(parent_divs[i]);
+        if (i % 2 == 0) {
+          par.prepend(img_div);
+        } else {
+          par.append(img_div);
+        }
+      }
+    }
+  });
+})();
+$(document).ready(function () {
+  $(window).trigger('resize');
 });
 </script>
 
