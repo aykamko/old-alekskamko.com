@@ -1,7 +1,7 @@
 nav {
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 1;
 
     .nav-container {
         width: 100%;
@@ -22,7 +22,6 @@ nav {
                 cursor: pointer;
                 font-size: 28px;
                 position: relative;
-                z-index: 1;
                 @include no-highlight;
                 @include transition(all 0.25s);
 
