@@ -101,7 +101,15 @@ h4 {
 
 .section, .intro, .about, .projects, .resume {
   width: 100%;
-  padding: 50px 8px; }
+  padding: 50px 50px; }
+  @media screen and (max-width: 650px) {
+    .section, .intro, .about, .projects, .resume {
+      padding-left: 7.69231%;
+      padding-right: 7.69231%; } }
+  @media screen and (max-width: 450px) {
+    .section, .intro, .about, .projects, .resume {
+      padding-left: 8px;
+      padding-right: 8px; } }
 
 .container {
   max-width: 800px;
@@ -143,9 +151,9 @@ h4 {
     font-size: 13px;
     letter-spacing: 0.2px;
     line-height: 1.7; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 650px) {
       .about .console {
-        padding: 5.99315%; } }
+        padding: 6.36364%; } }
     .about .console > .indent {
       display: inline-block;
       padding-left: 32px;
