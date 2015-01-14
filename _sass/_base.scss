@@ -126,6 +126,11 @@ h4 { font-size: 20px; }
 }
 
 @mixin transition($transitions) {
+    -moz-transition:    $transitions;
+    -o-transition:      $transitions;
+    -ms-transition:     $transitions;
+    -webkit-transition: $transitions;
+    transition:         $transitions;
     // CSS hacks
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -139,13 +144,6 @@ h4 { font-size: 20px; }
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-
-    // actual stuff
-    -moz-transition:    $transitions;
-    -o-transition:      $transitions;
-    -ms-transition:     $transitions;
-    -webkit-transition: $transitions;
-    transition:         $transitions;
 }
 
 @mixin no-highlight {

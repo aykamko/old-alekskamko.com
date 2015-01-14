@@ -26,8 +26,8 @@ nav {
                 @include transition(all 0.25s);
 
                 &.active {
-                    @include transform(rotate(90deg));
                     @include transition(all 0.5s);
+                    @include transform(rotate(90deg));
                 }
             }
         }
@@ -71,8 +71,8 @@ nav {
             visibility: visible;
 
             .nav-list {
-                @include transform(translateX(5px));
                 @include transition(all 0.5s);
+                @include transform(translateX(5px));
                 opacity: 1;
             }
 
