@@ -126,6 +126,7 @@ h4 { font-size: 20px; }
 }
 
 @mixin transition($transitions) {
+    -webkit-backface-visibility: hidden; // wat
     -moz-transition:    $transitions;
     -o-transition:      $transitions;
     -ms-transition:     $transitions;
@@ -164,7 +165,6 @@ h4 { font-size: 20px; }
         }
     }
 }
-
 
 @function strip-units($number) {
     @return $number / ($number * 0 + 1);
