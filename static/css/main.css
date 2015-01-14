@@ -144,6 +144,12 @@ h4 {
       max-width: 346px;
       margin-right: 40px;
       float: left; }
+      @media screen and (max-width: 768px) {
+        .intro .container .portrait-div {
+          padding: 0 8px;
+          margin: 0 auto;
+          margin-bottom: 40px;
+          float: none; } }
       .intro .container .portrait-div .portrait {
         border-radius: 50%; }
     .intro .container .blurb {
@@ -156,6 +162,18 @@ h4 {
         text-indent: -3px; }
       .intro .container .blurb h2 {
         font-size: 36px; }
+      @media screen and (max-width: 768px) {
+        .intro .container .blurb {
+          display: block;
+          height: inherit;
+          text-align: center; }
+          .intro .container .blurb h1 {
+            display: inline-block;
+            font-size: 36px;
+            text-indent: -3px; }
+          .intro .container .blurb h2 {
+            display: inline-block;
+            font-size: 36px; } }
 
 .about {
   background: #8690b8; }
@@ -170,7 +188,7 @@ h4 {
     font-family: Monaco, monospace;
     font-size: 13px;
     letter-spacing: 0.2px;
-    line-height: 1.7; }
+    line-height: 1.6; }
     @media screen and (max-width: 650px) {
       .about .console {
         padding: 6.36364%; } }
@@ -190,23 +208,30 @@ h4 {
     clear: both; }
   .projects .project:not(:last-child) {
     margin-bottom: 40px; }
-  .projects .project .project-desc {
-    height: 350px;
-    display: table-cell;
-    vertical-align: middle; }
+  @media screen and (min-width: 769px) {
+    .projects .project .project-desc {
+      height: 350px;
+      display: table-cell;
+      vertical-align: middle; } }
   .projects .project .project-img-div {
     width: 350px;
     border-radius: 50%;
     background: white; }
+    @media screen and (max-width: 768px) {
+      .projects .project .project-img-div {
+        margin: 0 auto;
+        margin-bottom: 16px; } }
     .projects .project .project-img-div > img {
       border-radius: 50%;
       width: 350px; }
-  .projects .project:nth-child(even) .project-img-div {
-    float: left;
-    margin-right: 40px; }
-  .projects .project:nth-child(odd) .project-img-div {
-    float: right;
-    margin-left: 40px; }
+  @media screen and (min-width: 769px) {
+    .projects .project:nth-child(even) .project-img-div {
+      float: left;
+      margin-right: 40px; } }
+  @media screen and (min-width: 769px) {
+    .projects .project:nth-child(odd) .project-img-div {
+      float: right;
+      margin-left: 40px; } }
 
 .resume {
   background: #edf0ff; }
@@ -220,14 +245,22 @@ h4 {
     margin: 20px 0; }
   .resume .resume-section .resume-subsection:not(:last-child) {
     margin-bottom: 20px; }
-  .resume .resume-section .resume-subsection .title-row:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .resume .resume-section .resume-subsection .title-row .title-left {
-    font-weight: 700; }
-  .resume .resume-section .resume-subsection .title-row .title-right {
-    float: right; }
+  .resume .resume-section .resume-subsection .title-row {
+    line-height: 1.3;
+    padding-left: 26px;
+    text-indent: -26px;
+    padding-bottom: 8px; }
+    .resume .resume-section .resume-subsection .title-row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .resume .resume-section .resume-subsection .title-row .title-left {
+      font-weight: 700; }
+    .resume .resume-section .resume-subsection .title-row .title-right {
+      float: right; }
+      @media screen and (max-width: 650px) {
+        .resume .resume-section .resume-subsection .title-row .title-right {
+          display: none; } }
   .resume .resume-section .resume-subsection > ul {
     list-style-type: circle; }
 
