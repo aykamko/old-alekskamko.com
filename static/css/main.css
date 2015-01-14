@@ -225,8 +225,11 @@ nav {
         font-size: 28px;
         position: relative;
         z-index: 1;
-        -webkit-transition: transform 0.25s;
-        transition: transform 0.25s;
+        -moz-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        -webkit-transition: all 0.25s;
+        transition: all 0.25s;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -234,21 +237,33 @@ nav {
         -ms-user-select: none;
         user-select: none; }
         nav .nav-container .nav-button-div .nav-button.active {
+          -moz-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
           -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-          -webkit-transition: transform 0.5s;
-          transition: transform 0.5s; }
+          -moz-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s; }
   nav .nav {
     position: fixed;
     overflow: hidden;
     right: 0;
     height: 100%;
     width: 300px;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     visibility: hidden; }
     nav .nav .nav-list {
       margin-top: 75px;
+      -moz-transition: all 0.25s;
+      -o-transition: all 0.25s;
+      -ms-transition: all 0.25s;
       -webkit-transition: all 0.25s;
       transition: all 0.25s;
       opacity: 0;
@@ -267,16 +282,28 @@ nav {
       background: #70b2a0;
       content: "";
       border-radius: 50%;
+      -moz-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      -o-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      -ms-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
       -webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
       transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1); }
     nav .nav.active {
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      -ms-transition: all 0.5s;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
       display: block;
       visibility: visible; }
       nav .nav.active .nav-list {
+        -moz-transform: translateX(5px);
+        -o-transform: translateX(5px);
+        -ms-transform: translateX(5px);
         -webkit-transform: translateX(5px);
         transform: translateX(5px);
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
         opacity: 1; }
@@ -286,6 +313,9 @@ nav {
         border-radius: 50%;
         margin-right: -2000px;
         margin-top: -2000px;
+        -moz-transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -o-transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -ms-transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
         -webkit-transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
         transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
