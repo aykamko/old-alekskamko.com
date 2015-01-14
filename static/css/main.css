@@ -202,40 +202,43 @@ h4 {
   .projects .blurb {
     text-align: center;
     margin-bottom: 40px; }
-  .projects .project {
-    display: table; }
-    .projects .project:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .projects .project:not(:last-child) {
-      margin-bottom: 40px; }
-    .projects .project .project-desc .project-name > * {
-      display: inline-block; }
+  @media screen and (min-width: 769px) {
+    .projects .project {
+      display: table; } }
+  .projects .project:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .projects .project:not(:last-child) {
+    margin-bottom: 40px; }
+  .projects .project .project-desc .project-name > * {
+    display: inline-block; }
+  @media screen and (min-width: 769px) {
+    .projects .project .project-desc {
+      display: table-cell;
+      vertical-align: middle; } }
+  .projects .project .table-spacer {
+    width: 40px; }
+    @media screen and (max-width: 768px) {
+      .projects .project .table-spacer {
+        display: none; } }
+  .projects .project .project-img-div {
+    max-width: 350px;
+    border-radius: 50%; }
     @media screen and (min-width: 769px) {
-      .projects .project .project-desc {
+      .projects .project .project-img-div {
+        width: 350px;
         display: table-cell;
         vertical-align: middle; } }
-    .projects .project .table-spacer {
-      width: 40px; }
-      @media screen and (max-width: 768px) {
-        .projects .project .table-spacer {
-          display: none; } }
-    .projects .project .project-img-div {
-      width: 350px;
-      border-radius: 50%; }
-      @media screen and (min-width: 769px) {
-        .projects .project .project-img-div {
-          display: table-cell;
-          vertical-align: middle; } }
-      @media screen and (max-width: 768px) {
-        .projects .project .project-img-div {
-          margin: 0 auto;
-          margin-bottom: 8px; } }
-      .projects .project .project-img-div > img {
-        background: white;
-        border-radius: 50%;
-        width: 350px; }
+    @media screen and (max-width: 768px) {
+      .projects .project .project-img-div {
+        padding: 0 8px;
+        margin: 0 auto;
+        margin-bottom: 8px; } }
+    .projects .project .project-img-div > img {
+      background: white;
+      border-radius: 50%;
+      width: 350px; }
 
 .resume {
   background: #edf0ff; }

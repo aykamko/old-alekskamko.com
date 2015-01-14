@@ -92,7 +92,7 @@
       <br/>
       
       
-      ['<span class="s"><a href="https://github.com/aykamko/" target="_blank">github</a></span>', '<span class="s"><a href="http://www.linkedin.com/in/aykamko" target="_blank">linkedin</a></span>', '<span class="s"><a href="http://fb.me/ayk" target="_blank">facebook</a></span>', '<span class="s"><a href="http://open.spotify.com/user/mrpersonguy" target="_blank">spotify</a></span>', '<span class="s"><a href="http://www.last.fm/user/aykamko" target="_blank">lastfm</a></span>']
+      ['<span class="s"><a href="https://github.com/aykamko/">github</a></span>', '<span class="s"><a href="http://www.linkedin.com/in/aykamko">linkedin</a></span>', '<span class="s"><a href="http://fb.me/ayk">facebook</a></span>', '<span class="s"><a href="http://open.spotify.com/user/mrpersonguy">spotify</a></span>', '<span class="s"><a href="http://www.last.fm/user/aykamko">lastfm</a></span>']
       
       <br/><br/>
       
@@ -100,7 +100,7 @@
       <br/>
       
       
-      '<span class="s"><a href="alekskamko_resume.pdf" target="_blank">alekskamko_resume.pdf</a></span>'
+      '<span class="s"><a href="alekskamko_resume.pdf">alekskamko_resume.pdf</a></span>'
       
       <br/><br/>
       
@@ -402,7 +402,7 @@
             <a href="mailto:aykamko@gmail.com">Email</a>
           </div>
           <div>
-            Credit to <a href="http://kalynnakano.com" target="_blank">Kalyn Nakano</a>.
+            Credit to <a href="http://kalynnakano.com">Kalyn Nakano</a>.
           </div>
         </div>
       </div>
@@ -435,6 +435,9 @@ $('a[href*=#]').on('click', function(e) {
   $('html, body').animate({scrollTop: tag.offset().top}, 750, 'easeInOutCubic');
   return false;
 });
+
+// Make all anchors open new tabs
+$('a').attr('target', '_blank');
 
 // Re-arrange project divs
 (function () {
