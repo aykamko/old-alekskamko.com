@@ -313,6 +313,11 @@ nav {
       display: block;
       visibility: visible; }
       nav .nav.active .nav-list {
+        -moz-transform: translateX(5px);
+        -o-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
         -webkit-backface-visibility: hidden;
         -moz-transition: all 0.5s;
         -o-transition: all 0.5s;
