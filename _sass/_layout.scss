@@ -22,25 +22,55 @@
     @extend .section;
     background: $intro-bg-color;
 
-    .portrait {
-        max-width: 400px + ($spacing-unit * 2);
-        padding-right: $spacing-unit;
-        float: left;
-        border-radius: 50%;
-    }
+    .container {
+        $portrait-size: 346px;
+        max-width: $portrait-size + $spacing-unit + 267px;
 
-    .blurb {
-        height: 400px;
-        display: table-cell;
-        vertical-align: middle;
-        color: white;
+        .portrait-div {
+            max-width: $portrait-size;
+            margin-right: $spacing-unit;
+            float: left;
+            @include media-query($on-tablet) {
+                padding: 0 $small-side-padding;
+                margin: 0 auto;
+                margin-bottom: $spacing-unit;
+                float: none;
+            }
 
-        h1 { 
-            font-size: 70px; 
-            text-indent: -3px;
+            .portrait {
+                border-radius: 50%;
+            }
         }
-        h2 { 
-            font-size: 43px; 
+
+        .blurb {
+            height: $portrait-size;
+            display: table-cell;
+            vertical-align: middle;
+            color: white;
+
+            h1 { 
+                font-size: 80px; 
+                text-indent: -3px;
+            }
+            h2 { 
+                font-size: 36px; 
+            }
+
+            @include media-query($on-tablet) {
+                display: block;
+                height: inherit;
+                text-align: center;
+
+                h1 { 
+                    display: inline-block;
+                    font-size: 36px; 
+                    text-indent: -3px;
+                }
+                h2 { 
+                    display: inline-block;
+                    font-size: 36px; 
+                }
+            }
         }
     }
 }
@@ -94,9 +124,11 @@
         }
 
         .project-desc {
-            height: 350px;
-            display: table-cell;
-            vertical-align: middle;
+            @include min-media-query($on-tablet + 1px) {
+                height: 350px;
+                display: table-cell;
+                vertical-align: middle;
+            }
         }
 
         .project-img-div {
@@ -104,6 +136,10 @@
             width: $project-img-div-width;
             border-radius: 50%;
             background: white;
+            @include media-query($on-tablet) {
+                margin: 0 auto;
+                margin-bottom: (2 * $small-side-padding);
+            }
 
             > img {
                 border-radius: 50%;
@@ -113,14 +149,18 @@
 
         &:nth-child(even) {
             .project-img-div {
-                float: left;
-                margin-right: $spacing-unit;
+                @include min-media-query($on-tablet + 1px) {
+                    float: left;
+                    margin-right: $spacing-unit;
+                }
             }
         }
         &:nth-child(odd) {
             .project-img-div {
-                float: right;
-                margin-left: $spacing-unit;
+                @include min-media-query($on-tablet + 1px) {
+                    float: right;
+                    margin-left: $spacing-unit;
+                }
             }
         }
     }
@@ -152,12 +192,19 @@
 
             .title-row {
                 @include clearfix;
+                line-height: 1.3;
+                padding-left: 26px;
+                text-indent: -26px;
+                padding-bottom: 8px;
 
                 .title-left {
                     font-weight: 700;
                 }
                 .title-right {
                     float: right;
+                    @include media-query($on-mobile) {
+                        display: none;
+                    }
                 }
             }
 

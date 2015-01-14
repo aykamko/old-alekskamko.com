@@ -116,6 +116,11 @@ h4 { font-size: 20px; }
         @content;
     }
 }
+@mixin min-media-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
 
 @mixin transform($transforms) {
     -moz-transform:    $transforms;
@@ -131,6 +136,7 @@ h4 { font-size: 20px; }
     -ms-transition:     $transitions;
     -webkit-transition: $transitions;
     transition:         $transitions;
+
     // CSS hacks
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
