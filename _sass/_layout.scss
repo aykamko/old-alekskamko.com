@@ -1,6 +1,15 @@
 .section {
     width: 100%;
-    padding: $section-padding $side-padding;
+    padding: $section-padding $base-side-padding;
+    @include media-query($on-mobile) {
+        $scaling-padding: strip-units($base-side-padding / $on-mobile) * 100%;
+        padding-left: $scaling-padding;
+        padding-right: $scaling-padding;
+    }
+    @include media-query($small-padding-cutoff) {
+        padding-left: $small-side-padding;
+        padding-right: $small-side-padding;
+    }
 }
 
 .container {
@@ -58,7 +67,7 @@
         line-height: $code-line-height;
 
         @include media-query($on-mobile) {
-            padding: strip-units((($console-padding * 2) / ($on-mobile - (2 * $side-padding))) / 2) * 100%;
+            padding: strip-units($console-padding / ($on-mobile - (2 * $base-side-padding))) * 100%;
         }
 
         > .indent {
@@ -93,12 +102,12 @@
         .project-img-div {
             $project-img-div-width: 350px;
             width: $project-img-div-width;
-            border: $side-padding solid $link-color-light;
+            border: $small-side-padding solid $link-color-light;
             border-radius: 50%;
 
             > img {
                 border-radius: 50%;
-                width: $project-img-div-width - (2 * $side-padding);
+                width: $project-img-div-width - (2 * $small-side-padding);
             }
         }
 

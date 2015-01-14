@@ -10,10 +10,11 @@ $link-color-light:          lighten($link-color, 15%);
 
 
 $section-padding:           50px;
+$spacing-unit:              40px;
 $nav-height:                75px;
 $footer-height:             100px;
-$side-padding:              8px;
-$spacing-unit:              40px;
+$base-side-padding:         $section-padding;
+$small-side-padding:        8px;
 
 $grey-color:                #828282;
 $grey-color-light:          lighten($grey-color, 40%);
@@ -38,5 +39,5 @@ $resume-bg-color:           #edf0ff;
 $footer-bg-color:           white;
 
 $content-width:             800px;
-
-$on-mobile:                 600px;
+$on-mobile:                 650px;
+$small-padding-cutoff:      450px;
