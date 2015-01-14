@@ -1,7 +1,7 @@
 root = File.expand_path('.')
 
 deploy_dir = "_deploy"
-deploy_branch = "gh-pages"
+deploy_branch = "master"
 deploy_remote = "origin"
 config_files = Dir.glob("_config/*.yml").join(",")
 

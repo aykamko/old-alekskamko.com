@@ -74,7 +74,7 @@ layout: default
 
 <section id="resume" class="resume">
   <div class="container">
-    <div class="blurb">Below is an expanded resume. You can grab a pdf <a href="http://alekskamko.com/alekskamko_resume.pdf">here</a>.</div>
+    <div class="blurb">Below is an expanded resume. You can grab a pdf <a href="{{ "alekskamko_resume.pdf" | prepend: site.baseurl }}">here</a>.</div>
     {% for section in site.resume %}
     <div class="resume-section">
       <h2 class="section-title">{{ section[0] | capitalize }}</h2>

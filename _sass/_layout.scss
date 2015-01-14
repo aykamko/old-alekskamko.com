@@ -46,11 +46,11 @@
             height: $portrait-size;
             display: table-cell;
             vertical-align: middle;
-            color: white;
+            // color: white;
 
             h1 { 
                 font-size: 80px; 
-                text-indent: -3px;
+                text-indent: -4px;
             }
             h2 { 
                 font-size: 36px; 
@@ -61,12 +61,7 @@
                 height: inherit;
                 text-align: center;
 
-                h1 { 
-                    display: inline-block;
-                    font-size: 36px; 
-                    text-indent: -3px;
-                }
-                h2 { 
+                h1, h2 { 
                     display: inline-block;
                     font-size: 36px; 
                 }

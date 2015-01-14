@@ -5,10 +5,7 @@ $small-font-size:           $base-font-size * 0.875;
 $tiny-font-size:            $base-font-size * 0.7;
 $base-line-height:          1.7;
 $text-color:                #111111;
-
 $link-color:                darken(#81a2be, 15%);
-$link-color-light:          lighten($link-color, 15%);
-
 
 $section-padding:           50px;
 $spacing-unit:              40px;
@@ -16,10 +13,6 @@ $nav-height:                75px;
 $footer-height:             100px;
 $base-side-padding:         $section-padding;
 $small-side-padding:        8px;
-
-$grey-color:                #828282;
-$grey-color-light:          lighten($grey-color, 40%);
-$grey-color-dark:           darken($grey-color, 25%);
 
 $nav-button-div-size:       47px;
 
@@ -33,7 +26,7 @@ $triad-salmon:              #ffddd3;
 $complimentary-teal:        #70b2a0;
 
 $nav-bg-color:              $complimentary-teal;
-$intro-bg-color:            #444c6b;
+$intro-bg-color:            darken($triad-salmon, 5%); // #444c6b;
 $about-bg-color:            $pantone-purple-impression;
 $projects-bg-color:         #d3dcff;
 $resume-bg-color:           #edf0ff;
