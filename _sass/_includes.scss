@@ -71,7 +71,7 @@ nav {
             visibility: visible;
 
             .nav-list {
-                // @include transform(translateX(5px));
+                @include transform(translateX(5px));
                 @include transition(all 0.5s);
                 opacity: 1;
             }
