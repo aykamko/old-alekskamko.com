@@ -6,12 +6,14 @@ jQuery.extend( jQuery.easing, {
 	},
 });
 $('.nav-button').on('click', function() {
-  $('.nav-button, .nav-darken, .nav').toggleClass('active');
+  $('.nav-button, .nav').toggleClass('active');
+  $('.page-content').toggleClass('darken');
   return false;
 });
 $('.nav-list > li > a').on('click', function(e) {
   var tag = $(this.getAttribute('href'));
-  $('.nav-button, .nav-darken, .nav').toggleClass('active');
+  $('.nav-button, .nav').toggleClass('active');
+  $('.page-content').toggleClass('darken');
   $('html, body').animate({scrollTop: tag.offset().top}, 750, 'easeInOutCubic');
   return false;
 });
