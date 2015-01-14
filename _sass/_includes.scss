@@ -23,8 +23,8 @@ nav {
                 font-size: 28px;
                 position: relative;
                 z-index: 1;
-                @include transition(all 0.25s);
                 @include no-highlight;
+                @include transition(all 0.25s);
 
                 &.active {
                     @include transform(rotate(90deg));
@@ -45,12 +45,9 @@ nav {
 
         .nav-list {
             margin-top: $nav-height;
-            @include transition(all 0.25s);
             opacity: 0;
             line-height: 3;
-            > span {
-                display: block;
-            }
+            @include transition(all 0.25s);
             > li > a {
                 color: black;
             }
@@ -75,7 +72,7 @@ nav {
             visibility: visible;
 
             .nav-list {
-                @include transform(translateX(5px));
+                // @include transform(translateX(5px));
                 @include transition(all 0.5s);
                 opacity: 1;
             }
@@ -96,21 +93,35 @@ footer {
     background: $footer-bg-color;
     font-size: $tiny-font-size;
     height: $footer-height;
-    width: $content-width;
-    display: table;
-    margin: 0 auto;
+    @extend .section;
+    padding-top: 0;
+    padding-bottom: 0;
 
-    .container {
-        padding: 0 $small-side-padding;
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
+    .wrapper {
+        height: 100%;
+        max-width: $content-width;
+        margin: 0 auto;
 
-        .left {
-            float: left;
-        }
-        .right {
-            float: right;
+        .table {
+            display: table;
+            height: 100%;
+            width: 100%;
+
+            .footer-container {
+                height: $footer-height;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                @include clearfix;
+
+                .left {
+                    float: left;
+                }
+                .right {
+                    float: right;
+                    text-align: right;
+                }
+            }
         }
     }
 }

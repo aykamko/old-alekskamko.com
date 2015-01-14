@@ -102,12 +102,12 @@
         .project-img-div {
             $project-img-div-width: 350px;
             width: $project-img-div-width;
-            border: $small-side-padding solid $link-color-light;
             border-radius: 50%;
+            background: white;
 
             > img {
                 border-radius: 50%;
-                width: $project-img-div-width - (2 * $small-side-padding);
+                width: $project-img-div-width;
             }
         }
 
