@@ -175,13 +175,6 @@ h4 { font-size: 20px; }
         height: 100%;
         @include transition(all 0.5s);
     }
-
-    &.darken {
-        &:before {
-            visibility: visible;
-            opacity: 0.3;
-        }
-    }
 }
 
 @function strip-units($number) {
