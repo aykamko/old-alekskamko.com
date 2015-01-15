@@ -1,0 +1,44 @@
+<header class="mobile-nav-header fixed-top">
+  <div>
+    <div class="mobile-navbar">
+      <div class="navbar-button-div" data-toggle="collapse" data-target=".navbar-collapse">
+        <ul>
+          <li class="navbar-menu-text noselect">menu</li>
+          <li>
+            <button class="navbar-toggle navbar-toggle-skin noselect" type="button">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar-custom first-bar noselect"></span>
+              <span class="icon-bar-custom noselect"></span>
+              <span class="icon-bar-custom noselect"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-collapse-skin navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-nav-skin">
+        <li>
+          <a class="navbar-button {% if page.slug == "about" %}active{% endif %}" href="{{ page.base_url }}">
+            <span class="visible-xs">About</span>
+          </a>
+        </li>
+        <li>
+          <a class="navbar-button {% if page.slug == "projects" %}active{% endif %}" href="{{ page.base_url }}projects">
+            <span class="visible-xs">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a class="navbar-button {% if page.slug == "resume" %}active{% endif %}" href="{{ page.base_url }}resume">
+            <span class="visible-xs">Resume</span>
+          </a>
+        </li>
+        <li>
+          <a class="navbar-button {% if page.slug == "blog" %}active{% endif %}" href="{{ page.base_url }}blog">
+            <span class="visible-xs">Blog</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobile-border-bottom"> </div>
+</header>

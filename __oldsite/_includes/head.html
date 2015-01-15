@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Aleks Kamko">
+
+<title>
+  {% if page.title == "Aleks Kamko" %}
+    {{ page.title }}
+  {% else if %}
+    {{ page.title }} &middot; Aleks Kamko
+  {% endif %}
+</title>
+
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,300,400' rel='stylesheet' type='text/css'>
+
+<!-- Font Awesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- jQeury -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- Bootstrap -->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Lightbox 2 -->
+<script src="{{ page.base_url }}/static/js/lightbox-2.6.min.js"></script>
+<link href="{{ page.base_url }}/static/css/lightbox.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="./static/js/html5shiv.js"></script>
+  <script src="./static/js/respond.min.js"></script>
+<![endif]-->
+
+<!-- Custom css (overrides Bootstrap) -->
+<link href="{{ page.base_url }}static/css/style.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ page.base_url }}static/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ page.base_url }}static/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ page.base_url }}static/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="{{ page.base_url }}static/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="{{ page.base_url }}static/ico/favicon.png">
+
+<!-- Custom JS -->
+<script src="{{ page.base_url }}/static/js/scroll.js"></script>

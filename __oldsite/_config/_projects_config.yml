@@ -1,0 +1,139 @@
+projects:
+
+  - name: uGuru.me
+    url: http://berkeley.uguru.me
+    repo: 
+    images: 
+      - uguru0.png
+      - uguru1.png
+      - uguru2.png
+    description: >
+      Uguru is an up and coming startup Berkeley tutoring startup that I worked
+      for in Fall 2013. As the designated Lead Engineer for the website, I
+      developed [Flask](http://flask.pocoo.org/) backend code for the site, 
+      using various tools and APIs, including [Heroku](http://heroku.com/), 
+      [SQLAlchemy](http://www.sqlalchemy.org/), [Alembic](https://bitbucket.org/zzzeek/alembic), 
+      [Mandrill](http://mandrill.com/), and [PostgreSQL](http://www.postgresql.org/). I played a 
+      significant role in front-end development as well, using Javascript and JQuery. Below are 
+      some screenshots of a responsive profile page I worked on for the second iteration. While 
+      I was working on the site, Uguru reached 600+ registered users, and the website 
+      recieved increasing traffic from unique users every day. Unfortunately, we never 
+      rolled out the second iteration while I was on the team, but feel 
+      free to check out the website at the link above.
+
+  - name: My Website
+    url:
+    repo: https://github.com/aykamko/aykamko.github.io
+    images: 
+    description: >
+      My site is built using [Jekyll](http://jekyllrb.com/), an awesome static blog 
+      generator. Hacking it together has been an awesome intro to webdev for me. I've learned
+      how to properly structure HTML by using a [templating language](http://liquidmarkup.org/) 
+      to enforce an inheritance structure. I've picked up quite a bit about site design 
+      as well, from both a UI and UX perspective: I've cycled through trying to design 
+      my site from scratch, to heavily relying on [Bootstrap](http://getbootstrap.com/), 
+      and back again to moving away from front-end frameworks. Finally, I got a bit
+      of Ruby experience by making [rakefiles](http://rake.rubyforge.org/doc/rakefile_rdoc.html) for
+      serving my site locally and commiting/pushing it live to Github. My site is 
+      hosted for free using [Github Pages](http://pages.github.com/), and the 
+      repo for the entire site can be found at the link above.
+
+  - name: Resistor Reader
+    url: https://play.google.com/store/apps/details?id=kamkowarrier.collab.resistorreader
+    repo: https://github.com/aykamko/ResistorReader
+    images: 
+      - resistor_reader0.png
+      - resistor_reader1.png
+    description: >
+      Resistor Reader is a simple, small, and user-friendly Android application 
+      for working with resistor values. Upper and lower standard resistance values are 
+      displayed for each input, making it a breeze to work with resistors. 
+      This was my first mobile project, as well 
+      as my first project in Java—in fact, I had zero experience with either going into it. 
+      I collaborated with my good friend Deepak Warrier in building it, and after 
+      some serious struggles with learning Java and Android from scratch, we finally 
+      finished a stable version that we published to Google Play.
+
+  - name: Bump
+    url: http://tiny.cc/fbump
+    repo: https://github.com/aykamko/Bump
+    images:
+      - fbump0.png
+      - fbump1.png
+      - fbump2.png
+    description: >
+      Bump was my hack for Camp Hackathona at Facebook in the Summer of 2013. The idea 
+      is simple: bump phones with another person and be thrown to their Facebook profile! 
+      The hack was actually pretty simple to implement. We used the phones' accelerometers to 
+      determine a "bump", at that point both phones send their geolocation and time of bump 
+      up to a Heroku server. The server figures out which two phones bumped (when and where), 
+      sending the appropriate
+      Facebook profiles to the respective phones. We built *both* an HTML5 app and a 
+      standalone iPhone application. The HTML5 app is live and works for iPhones, so feel free to 
+      try it out! (We had some technical difficulties on Android web browsers.)
+
+  - name: WhoStat
+    url:
+    repo: https://github.com/aykamko/WhoStat
+    images: 
+      - whostat0.png
+      - whostat1.png
+      - whostat2.png
+    description: >
+      WhoStat is an iPhone game where you identify the poster of a particular Facebook 
+      status, choosing from a list of five mutual friends—this ended up being 
+      surprisingly difficult. WhoStat was my first complete 
+      iOS application; I built it for the Intern Hackathon at Facebook in the 
+      Summer of 2013 with [Dan Schlosser](http://danrschlosser.com/). It was also 
+      my first experience with the Facebook API and with fetching data from URLs 
+      in general.
+
+  - name: CalMunch
+    url: http://calmunch.heroku.com
+    repo: https://github.com/aykamko/calmunch
+    images: 
+      - calmunch.png
+    description: >
+      CalMunch is a hackathon project that I built for HackJam, Fall 2013. The idea 
+      was to create an event aggregator for all the free food available from various 
+      events on the UC Berkeley campus. I worked with a team of 3 others in building it;
+      we used Flask with Heroku as the backend framework, Bootstrap for the front-end, 
+      and [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/) for Python 
+      to scrape data off of the various event posting sites used by Berkeley. We 
+      had only 8 hours to build the site from scratch, so the main scraping component 
+      was never quite implemented, but you can see a demo of what we had time to build above.
+
+  - name: Traquest
+    url:
+    repo: https://github.com/aykamko/Traquest
+    images: 
+    description: >
+      Traquest was my main summer project as an FBU Intern at Facebook. In short, Traquest 
+      adds tracking functionality and other goodies to Facebook events. Attendees of an 
+      event can begin sharing their location within 3 hours of the scheduled time. Users can
+      then visualize each other on a map and get useful information on 
+      everyone's distance, average arrival time, etc. Most importantly, users can 
+      anonymize or opt out of being tracked at any time—my team and I were very aware of 
+      privacy concerns and tried to make our app as least "creepy" as possible. Traquest 
+      was an incredibly valuable experience: it was my first time working on a large 
+      codebase with a team of engineers. We used various tools and services, but most importantly 
+      the [Facebook SDK](https://developers.facebook.com/) and [Parse](https://parse.com/). I 
+      acquired quite a bit of experience with Objective-C through this project.
+
+  - name: PathFinder
+    url: http://snap.berkeley.edu/snapsource/snap.html#open:http://snap.berkeley.edu/snapsource/demo/PathFinder.xml
+    repo: 
+    images: 
+      - pathfinder0.png
+      - pathfinder1.png
+    description: >
+      As one of my first CS projects, I feel that PathFinder deserves an honorary mention. 
+      PathFinder is a visualization of the A* search algorithm. Users can choose from a 
+      set of preconfigured mazes or build their own, and watch the algorithm find the shortest path from the start 
+      to the end. I built this after only 3 months of CS. It's written entirely in the 
+      *Snap!* visual language. It runs a little slow, but you can demo it at the 
+      link above.
+
+      
+
+

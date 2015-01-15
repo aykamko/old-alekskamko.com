@@ -1,0 +1,35 @@
+<div class="container-header header">
+  <div class="header-div">
+    <div class="header-pic-div tablet-center">
+      <a href="{{ page.base_url }}">
+        <img class="profile-pic" src="{{ page.base_url }}static/img/profile-pic.jpg">
+      </a>
+    </div>
+    <div class="header-info-div tablet-center">
+      <div class="center noselect">
+        <div class="header-name"><a id="name" href="{{ page.base_url }}">Aleks Kamko</a></div>
+        <div class="header-blurb">Software Engineer <span id="andand">&&</span> Startup Enthusiast</div>
+      </div>
+      <div class="icon-div">
+        <a href="https://github.com/aykamko/"><i class="fa fa-github-square fa-5x"></i></a>
+        <a href="http://www.linkedin.com/in/aykamko"><i class="fa fa-linkedin-square fa-5x"></i></a>
+        <a href="http://fb.me/ayk"><i class="fa fa-facebook-square fa-5x"></i></a>
+        <a href="https://plus.google.com/u/0/108308147841913478556"><i class="fa fa-google-plus-square fa-5x"></i></a>
+        <a href="mailto:{{ site.email }}"><i class="fa fa-envelope-square fa-5x"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $("#andand").click(function() {
+    var name = $("#name").text();
+    if (name == 'Aleks Kamko') {
+      $("#name").text( "Okmak Skela" )
+      $("#name").css('color', '#c00')
+    } else {
+      $("#name").text( "Aleks Kamko" )
+      $("#name").css('color', '#000')
+    }
+  });
+</script>

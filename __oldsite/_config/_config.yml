@@ -1,0 +1,9 @@
+name: Aleks Kamko
+url: http://alekskamko.com
+email: ak@alekskamko.com
+pygments: true
+static: /static
+destination: _deploy
+exclude: [rakefile]
+include: [.gitignore, README.md]
+force_update: true

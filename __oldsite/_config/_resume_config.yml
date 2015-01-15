@@ -1,0 +1,103 @@
+education:
+
+  - degree: BS Electrical Engineering and Computer Science
+    place: University of California, Berkeley
+    expected: May 2016
+    relevant_experience:
+      - Python, Structure and Interpretation of Computer Programs (CS61A)
+      - Java, Data Structures and Algorithms (CS61B)
+      - C and MIPS, Machine Structures (CS61C)
+      - Algorithms (CS170)
+
+  - degree: High School Diploma with Honors
+    place: Clovis High School, Clovis, CA
+    recieved: May 2012
+
+skills:
+
+  proficient:
+    - Python
+    - Java
+    - Javascript
+    - jQuery
+    - PHP
+    - HTML/CSS
+    - Objective-C
+    - git
+  experience:
+    - Flask
+    - Node.js
+    - C
+    - SQL/MySQL
+    - mercurial
+    - bash
+  exposure:
+    - Ruby
+    - C++
+  other:
+    - Mac OS X
+    - Unix
+    - Adobe Photoshop
+    - Illustrator
+    - Premiere Pro
+    - Final Cut Pro
+
+experience:
+
+  - position: Software Engineer
+    organization: Facebook Inc.
+    start: May 2014
+    end: August 2014
+    blurbs:
+      - Worked in the Language Technology team on Machine Translation.
+      - Monitored and analyzed Out-of-Vocabularies (OOVs) in translation requests.
+      - Built a web interface to flag and eliminate OOVs.
+
+  - position: Undergraduate Student Instructor
+    organization: CS61B, UC Berkeley
+    start: August 2014
+    end: Present
+    blurbs:
+      - TA for introductory Data Structures and Algorithms course at UC Berkeley.
+      - I teach two sections, hold office hours, prepare discussion notes, and lead review sessions.
+
+  - position: iOS Software Engineer
+    organization: Facebook Inc.
+    start: July 2013
+    end: August 2013
+    blurbs:
+      - Grokked Objective-C and iOS development through an extensive training session with Big Nerd Ranch. 
+      - Led a team of three other intern engineers in building an iOS application, utilizing SDKs from various services including Google Maps, Facebook, and Parse.
+      - Participated enthusiastically in company-held hackathons, building two standalone iOS applications, as well as an HTML5 app using Heroku with MongoDB.
+
+  - position: Lead Developer
+    organization: "[berkeley.uguru.me](http://berkeley.uguru.me)"
+    start: August 2013
+    end: December 2013
+    blurbs:
+      - Led Flask backend development for an up and coming Berkeley tutoring startup. 
+      - Oversaw PostgresSQL databases, resolved daily bug reports coming from the website, and actively developed new features. 
+      - Played a substantial role in designing and coding frontend.
+
+  - position: CS61A Reader/Grader
+    organization: CS61A, UC Berkeley
+    start: August 2013
+    end: December 2013
+    blurbs: 
+      - Guided students through essential computing concepts and encouraged enthusiasm in computer science in general. 
+      - Reinforced students' and personal knowledge and experience with Python, Scheme, and proper coding etiquette/style.
+
+leadership:
+
+  - position: Web Tier Leader
+    organization: "[Innovative Design](http://www.innod.net)"
+    term: Fall 2014
+    blurbs:
+      - Leading a team of ~10 developers and designers in building web sites and brands for clients.
+
+  - position: Community Relations Officer
+    organization: "[Innovative Design](http://www.innod.net)"
+    term: Fall 2014
+    blurbs:
+      - Building relations between Innovative Design and other organizations on the Berkeley campus.
+      - Expanding non-profit and charity work for the club.
