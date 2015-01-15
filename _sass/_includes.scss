@@ -3,7 +3,7 @@ nav {
     width: 100%;
     z-index: 1;
 
-    .nav-container {
+    .nav-button-container {
         width: 100%;
 
         .nav-button-div {
@@ -19,16 +19,10 @@ nav {
             .nav-button {
                 display: table-cell;
                 vertical-align: middle;
-                cursor: pointer;
                 font-size: 28px;
                 position: relative;
                 @include no-highlight;
                 @include transition(all 0.25s);
-
-                &.active {
-                    @include transition(all 0.5s);
-                    @include transform(rotate(90deg));
-                }
 
                 .hbar {
                     background: $text-color;
@@ -44,7 +38,7 @@ nav {
         }
     }
 
-    .nav {
+    .nav-container {
         position: fixed;
         overflow: hidden;
         right: 0;
@@ -94,25 +88,55 @@ nav {
             border-radius: 50%;
             @include transition(all 600ms cubic-bezier(0.215, 0.61, 0.355, 1));
         }
+    }
+}
+#nav-toggle {
+    z-index: 2;
+    width: $nav-button-div-size;
+    height: $nav-button-div-size;
+    position: fixed;
+    top: ($nav-height / 2) - ($nav-button-div-size / 2);
+    right: ($nav-height / 2) - ($nav-button-div-size / 2);
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
 
-        &.active {
-            @include transition(all 0.5s);
-            display: block;
-            visibility: visible;
-
-            .fade-in {
+    &:checked {
+        & + nav {
+            .nav-container {
                 @include transition(all 0.5s);
-                @include transform(translateX(5px));
-                opacity: 1;
+                display: block;
+                visibility: visible;
+
+                .fade-in {
+                    @include transition(all 0.5s);
+                    @include transform(translateX(5px));
+                    opacity: 1;
+                }
+
+                &:before {
+                    height: 4000px;
+                    width: 4000px;
+                    border-radius: 50%;
+                    margin-right: -2000px;
+                    margin-top: -2000px;
+                    @include transition(all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1));
+                }
             }
 
+            .nav-button-container {
+                .nav-button-div .nav-button {
+                    @include transition(all 0.5s);
+                    @include transform(rotate(90deg));
+                }
+            }
+        }
+        & ~ .page-content {
             &:before {
-                height: 4000px;
-                width: 4000px;
-                border-radius: 50%;
-                margin-right: -2000px;
-                margin-top: -2000px;
-                @include transition(all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1));
+                visibility: visible;
+                opacity: 0.3;
             }
         }
     }

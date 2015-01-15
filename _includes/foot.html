@@ -7,17 +7,13 @@ jQuery.extend( jQuery.easing, {
 	},
 });
 
-// On-clicks for menu stuff
-$('.nav-button').on('click', function() {
-  $('.nav-button, .nav').toggleClass('active');
-  $('.page-content').toggleClass('darken');
-  return false;
-});
+// Menu item click logic
+var $nav_button_input = $('#nav-button-input');
+var $html_body = $('html, body');
 $('a[href*=#]').on('click', function(e) {
   var tag = $(this.getAttribute('href'));
-  $('.nav-button, .nav').toggleClass('active');
-  $('.page-content').toggleClass('darken');
-  $('html, body').animate({scrollTop: tag.offset().top}, 750, 'easeInOutCubic');
+  $nav_button_input.trigger('click');
+  $html_body.animate({scrollTop: tag.offset().top}, 750, 'easeInOutCubic');
   return false;
 });
 
