@@ -112,9 +112,6 @@ h4 {
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
-.page-content.darken:before {
-  visibility: visible;
-  opacity: 0.3; }
 
 .section, .intro, .about, .projects, .resume, footer {
   width: 100%;

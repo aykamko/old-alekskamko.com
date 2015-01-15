@@ -461,11 +461,11 @@ jQuery.extend( jQuery.easing, {
 });
 
 // Menu item click logic
-var $nav_button_input = $('#nav-button-input');
+var $nav_toggle = $('#nav-toggle');
 var $html_body = $('html, body');
 $('a[href*=#]').on('click', function(e) {
   var tag = $(this.getAttribute('href'));
-  $nav_button_input.trigger('click');
+  $nav_toggle.trigger('click');
   $html_body.animate({scrollTop: tag.offset().top}, 750, 'easeInOutCubic');
   return false;
 });
