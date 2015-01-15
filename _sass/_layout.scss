@@ -46,7 +46,6 @@
             height: $portrait-size;
             display: table-cell;
             vertical-align: middle;
-            // color: white;
 
             h1 { 
                 font-size: 80px; 
@@ -113,9 +112,7 @@
     }
 
     .project {
-        @include min-media-query($on-tablet + 1px) {
-            display: table;
-        }
+        display: table;
         @include clearfix;
         &:not(:last-child) {
             @include vertical-spacer;
@@ -125,9 +122,10 @@
             .project-name {
                 > * { display: inline-block; }
             }
-            @include min-media-query($on-tablet + 1px) {
-                display: table-cell;
-                vertical-align: middle;
+            display: table-cell;
+            vertical-align: middle;
+            @include media-query($on-tablet) {
+                display: table-footer-group;
             }
         }
 

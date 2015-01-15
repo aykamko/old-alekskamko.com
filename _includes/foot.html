@@ -19,44 +19,4 @@ $('a[href*=#]').on('click', function(e) {
 
 // Make all anchors open new tabs
 $('a').attr('target', '_blank');
-
-// Re-arrange project divs
-(function () {
-  var project_img_divs = $('.project-img-div');
-  var parent_divs = project_img_divs.parent();
-  var img_div;
-  var par;
-  // http://stackoverflow.com/questions/18546067
-  function viewport_width() {
-      var e = window, 
-          a = 'inner';
-      if (!('innerWidth' in window)) {
-          a = 'client';
-          e = document.documentElement || document.body;
-      }
-      return e[a+'Width'];
-  }
-  $(window).resize(function () {
-    if (viewport_width() <= 768) {
-      for (var i = 0; i < project_img_divs.length; i++) {
-        img_div = $(project_img_divs[i]);
-        par = $(parent_divs[i]);
-        par.prepend(img_div);
-      }
-    } else {
-      for (var i = 0; i < project_img_divs.length; i++) {
-        img_div = $(project_img_divs[i]);
-        par = $(parent_divs[i]);
-        if (i % 2 == 0) {
-          par.prepend(img_div);
-        } else {
-          par.append(img_div);
-        }
-      }
-    }
-  });
-})();
-$(document).ready(function () {
-  $(window).trigger('resize');
-});
 </script>
