@@ -31,6 +31,11 @@
   <!-- Quattrocento Sans -->
   <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
 
+  <!-- no-js -->
+  <script>
+    document.documentElement.classList.remove('no-js');
+  </script>
+
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 </head>
@@ -41,8 +46,9 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <nav>
-  <div class="nav">
+    <input id="nav-toggle" type="checkbox" value="selected"/>
+<nav>
+  <div class="nav-container">
     <div class="fade-in">
       <span class="brand"><a href="#intro">AK</a></span>
       <ul class="nav-list">
@@ -52,7 +58,7 @@
       </ul>
     </div>
   </div>
-  <div class="nav-container">
+  <div class="nav-button-container">
     <div class="nav-button-div">
       <div class="nav-button">
         <div class="hbar"></div>
@@ -454,62 +460,18 @@ jQuery.extend( jQuery.easing, {
 	},
 });
 
-// On-clicks for menu stuff
-$('.nav-button').on('click', function() {
-  $('.nav-button, .nav').toggleClass('active');
-  $('.page-content').toggleClass('darken');
-  return false;
-});
+// Menu item click logic
+var $nav_button_input = $('#nav-button-input');
+var $html_body = $('html, body');
 $('a[href*=#]').on('click', function(e) {
   var tag = $(this.getAttribute('href'));
-  $('.nav-button, .nav').toggleClass('active');
-  $('.page-content').toggleClass('darken');
-  $('html, body').animate({scrollTop: tag.offset().top}, 750, 'easeInOutCubic');
+  $nav_button_input.trigger('click');
+  $html_body.animate({scrollTop: tag.offset().top}, 750, 'easeInOutCubic');
   return false;
 });
 
 // Make all anchors open new tabs
 $('a').attr('target', '_blank');
-
-// Re-arrange project divs
-(function () {
-  var project_img_divs = $('.project-img-div');
-  var parent_divs = project_img_divs.parent();
-  var img_div;
-  var par;
-  // http://stackoverflow.com/questions/18546067
-  function viewport_width() {
-      var e = window, 
-          a = 'inner';
-      if (!('innerWidth' in window)) {
-          a = 'client';
-          e = document.documentElement || document.body;
-      }
-      return e[a+'Width'];
-  }
-  $(window).resize(function () {
-    if (viewport_width() <= 768) {
-      for (var i = 0; i < project_img_divs.length; i++) {
-        img_div = $(project_img_divs[i]);
-        par = $(parent_divs[i]);
-        par.prepend(img_div);
-      }
-    } else {
-      for (var i = 0; i < project_img_divs.length; i++) {
-        img_div = $(project_img_divs[i]);
-        par = $(parent_divs[i]);
-        if (i % 2 == 0) {
-          par.prepend(img_div);
-        } else {
-          par.append(img_div);
-        }
-      }
-    }
-  });
-})();
-$(document).ready(function () {
-  $(window).trigger('resize');
-});
 </script>
 
 
