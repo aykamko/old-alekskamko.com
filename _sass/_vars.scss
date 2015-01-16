@@ -1,11 +1,17 @@
 $base-font-family:          'Quattrocento Sans', Helvetica, Arial, sans-serif;
 $base-font-size:            20px;
-$large-font-size:           $base-font-size * 1.125;
+$large-font-size:           $base-font-size * 1.1;
 $small-font-size:           $base-font-size * 0.875;
 $tiny-font-size:            $base-font-size * 0.7;
 $base-line-height:          1.7;
+$small-line-height:         1.6;
 $text-color:                #111111;
 $link-color:                darken(#81a2be, 15%);
+
+$content-width:             800px;
+$on-tablet:                 768px;
+$on-mobile:                 650px;
+$small-font-cutoff:         450px;
 
 $section-padding:           50px;
 $spacing-unit:              40px;
@@ -31,8 +37,3 @@ $about-bg-color:            $pantone-purple-impression;
 $projects-bg-color:         #d3dcff;
 $resume-bg-color:           #edf0ff;
 $footer-bg-color:           white;
-
-$content-width:             800px;
-$on-tablet:                 768px;
-$on-mobile:                 650px;
-$small-padding-cutoff:      450px;
