@@ -169,7 +169,7 @@ img {
 }
 
 ul, ol {
-    margin-left: $spacing-unit;
+    margin-left: $base-font-size;
 }
 li {
     > ul, > ol { margin-bottom: 0; }
