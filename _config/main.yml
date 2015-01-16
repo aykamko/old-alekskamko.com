@@ -13,3 +13,5 @@ force_update: true
 
 # Build settings
 markdown: kramdown
+gems:
+    - jekyll-minifier # http://www.rubydoc.info/github/digitalsparky/jekyll-minifier/master

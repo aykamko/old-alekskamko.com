@@ -1,7 +1,27 @@
 <script>
+(function() {
+    var load_stylesheet = function(href) {
+      var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href;
+      var h = document.head; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    var stylesheets = [
+      'http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700',
+    ];
+    for (var i = 0; i < stylesheets.length; i++) {
+      var ls = load_stylesheet.bind(undefined, stylesheets[i]);
+      if (raf) raf(ls);
+      else window.addEventListener('load', ls);
+    }
+})();
+</script>
+<script>
+function _jQueryOnload() {
+
 // Add cubic easing to animations (didn't want to import all of jQuery UI)
 // http://gsgd.co.uk/sandbox/jquery/easing/
-jQuery.extend(jQuery.easing, {
+$.extend($.easing, {
   easeInOutCubic: function (x, t, b, c, d) {
     if ((t/=d/2) < 1) return c/2*t*t*t + b;
     return c/2*((t-=2)*t*t + 2) + b;
@@ -19,4 +39,7 @@ $('a[href*=#]').click(function() {
 
 // Make all anchors open new tabs
 $('a').attr('target', '_blank');
+
+}
 </script>
+<script async src="https://code.jquery.com/jquery-2.1.3.min.js" onload="_jQueryOnload()"></script>
