@@ -138,11 +138,15 @@ h4 {
   .intro .container {
     max-width: 653px; }
     .intro .container .portrait-div {
-      max-width: 346px;
+      width: 346px;
+      height: 346px;
       margin-right: 40px;
       float: left; }
       @media screen and (max-width: 768px) {
         .intro .container .portrait-div {
+          width: inherit;
+          height: inherit;
+          max-width: 346px;
           padding: 0 8px;
           margin: 0 auto;
           margin-bottom: 40px;
