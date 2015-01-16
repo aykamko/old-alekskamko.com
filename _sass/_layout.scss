@@ -27,10 +27,14 @@
         max-width: $portrait-size + $spacing-unit + 267px;
 
         .portrait-div {
-            max-width: $portrait-size;
+            width: $portrait-size;
+            height: $portrait-size;
             margin-right: $spacing-unit;
             float: left;
             @include media-query($on-tablet) {
+                width: inherit;
+                height: inherit;
+                max-width: $portrait-size;
                 padding: 0 $small-side-padding;
                 margin: 0 auto;
                 margin-bottom: $spacing-unit;
