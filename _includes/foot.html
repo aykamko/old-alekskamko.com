@@ -1,22 +1,4 @@
 <script>
-(function() {
-    var load_stylesheet = function(href) {
-      var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href;
-      var h = document.head; h.parentNode.insertBefore(l, h);
-    };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-    var stylesheets = [
-      'http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700',
-    ];
-    for (var i = 0; i < stylesheets.length; i++) {
-      var ls = load_stylesheet.bind(undefined, stylesheets[i]);
-      if (raf) raf(ls);
-      else window.addEventListener('load', ls);
-    }
-})();
-</script>
-<script>
 function _jQueryOnload() {
 
 // Add cubic easing to animations (didn't want to import all of jQuery UI)
