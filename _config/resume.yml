@@ -2,82 +2,57 @@ resume:
 
     experience:
 
-      - title_left: Software Engineer
-        subtitle_left: Facebook Inc.
-        title_right: May 2014 - Aug 2014
+      - title_left: Identity Team Intern
+        subtitle_left: Twitch
+        title_right: Summer 2015
         info:
-          - Worked in the Language Technology team on Machine Translation.
-          - Monitored and analyzed Out-of-Vocabularies (OOVs) in translation requests.
-          - Built a web interface to flag and eliminate OOVs.
+          - Launched new, secure OpenID authentication portal. Designed and implemented standalone Golang tools for configs and i18n.
 
-      - title_left: CS61B Undergraduate Student Instructor
+      - title_left: Language Technology Team Intern
+        subtitle_left: Facebook
+        title_right: Summer 2014
+        info:
+          - Analyzed large data sets of out-of-vocabularies (OOVs) in translation requests; developed web interface to flag and eliminate OOVs.
+
+      - title_left: TA @ CS162 [Operating Systems] & CS61B [Data Structures]
         subtitle_left: UC Berkeley
-        title_right: Aug 2014 - Present
+        title_right: Fall 2014 - Present
         info:
-          - TA for introductory Data Structures and Algorithms course at UC Berkeley.
-          - Built the git infrastructure and part of the autograder for the class.
-          - I teach three sections, hold office hours, prepare discussion notes, and make test question.
+          - TA for intro course and OS course. Teach sections/labs, hold office hours, lead review sessions, develop section and test material.
 
-      - title_left: iOS Software Engineer
-        subtitle_left: Facebook Inc.
-        title_right: Jul 2013 - Aug 2013
+      - title_left: Facebook University iOS Intern
+        subtitle_left: Facebook
+        title_right: Summer 2013
         info:
-          - Grokked Objective-C and iOS development through an extensive training session with Big Nerd Ranch. 
-          - Led a team of three other intern engineers in building an iOS application, utilizing SDKs from various services including Google Maps, Facebook, and Parse.
-          - Participated enthusiastically in company-held hackathons, building two standalone iOS applications, as well as an HTML5 app using Heroku with MongoDB.
-
-      - title_left: Lead Developer
-        subtitle_left: "[berkeley.uguru.me](http://berkeley.uguru.me)"
-        title_right: Aug 2013 - Dec 2013
-        info:
-          - Led Flask backend development for an rising Berkeley tutoring startup. 
-          - Oversaw PostgresSQL databases, resolved daily bug reports coming from the website, and actively developed new features. 
-          - Played a substantial role in designing and implementing frontend.
-
-      - title_left: CS61A Reader/Grader
-        subtitle_left: UC Berkeley
-        title_right: Aug 2013 - Dec 2013
-        info: 
-          - Guided students through essential computing concepts and encouraged enthusiasm in computer science in general. 
-          - Reinforced students' and personal knowledge and experience with Python, Scheme, and proper coding etiquette/style.
-
-
-    education:
-
-      - title_left: BS Electrical Engineering and Computer Science
-        subtitle_left: University of California, Berkeley
-        title_right: May 2016
-        info:
-          - Structure and Interpretation of Computer Programs (Python, Scheme)
-          - Data Structures and Algorithms (Java)
-          - Machine Structures (C, MIPS)
-          - Algorithms
-          - Operating Systems (C, Java)
-          - Compilers (C, Python)
+          - Worked in team of 3 in building an iOS application. Built two standalone iOS apps and a web app at company-held hackathons.
 
     skills:
 
       - subtitle_left: Proficient
-        list: 
+        list:
             - Python
             - Java
             - Javascript
-            - jQuery
-            - PHP
-            - HTML/CSS
-            - Objective-C
+            - Golang
+            - git
+            - GitHub
+            - vim
       - subtitle_left: Experience
         list:
             - Flask
-            - Node.js
+            - Django
+            - Ruby/Rails
+            - PHP (Hack)
             - C
-            - SQL/MySQL
+            - C++
+            - Objective-C
+            - SQL
             - mercurial
             - bash
       - subtitle_left: Exposure
         list:
-            - Ruby
-            - C++
+            - Node.js
+            - Jenkins
       - subtitle_left: Other
         list:
             - Mac OS X
@@ -87,17 +62,33 @@ resume:
             - Premiere Pro
             - Final Cut Pro
 
+    education:
+
+      - title_left: BS Electrical Engineering and Computer Science
+        subtitle_left: University of California, Berkeley
+        title_right: Expected May 2016
+        info:
+          - Structure and Interpretation of Computer Programs (Python, Scheme)
+          - Data Structures and Algorithms (Java)
+          - Machine Structures (C, MIPS)
+          - Algorithms
+          - Operating Systems (C, Java)
+          - Compilers (C++, Python)
+          - Internet Architecture/Networks (Python)
+          - Machine Learning (Golang, Python)
+          - AI (Python)
+
+
     leadership:
 
       - title_left: Web Tier Leader
-        subtitle_left: "[Innovative Design](http://www.innovativedesign.club)"
+        subtitle_left: "[Innovative Design](http://innovativedesign.club)"
         title_right: Fall 2014
         info:
-          - Led a team of 6 developers and designers in building web sites and brands for clients.
+          - Led a team of 6 developers and designers in improving web sites and brands for on-campus organizations.
 
-      - title_left: Community Relations Officer
-        subtitle_left: "[Innovative Design](http://www.innovativedesign.club)"
-        title_right: Fall 2014
+      - title_left: VP of Tech
+        subtitle_left: "[Blueprint](http://calblueprint.org)"
+        title_right: Present
         info:
-          - Built relations between Innovative Design and other organizations on the Berkeley campus.
-          - Expanded non-profit and charity work for the club.
+          - Maintain and develop calblueprint.org and other internal tools. Code review changes to Blueprint projects. Advise project leaders.

@@ -44,7 +44,7 @@ layout: default
 
 <section id="projects" class="projects">
   <div class="container">
-    <div class="blurb">I love side projects. Here are some notable ones.</div>
+    <div class="blurb">I like to build things outside of school. Here are some notable projects.</div>
     {% for project in site.projects %}
     {% capture parity %}{% cycle 'odd', 'even' %}{% endcapture %}
     <div class="project">
@@ -78,7 +78,7 @@ layout: default
 
 <section id="resume" class="resume">
   <div class="container">
-    <div class="blurb">Below is an expanded resume. You can grab a pdf <a href="{{ "alekskamko_resume.pdf" | prepend: site.baseurl }}">here</a>.</div>
+    <div class="blurb">Below is an HTML resume. You can grab a pdf <a href="{{ "alekskamko_resume.pdf" | prepend: site.baseurl }}">here</a>.</div>
     {% for section in site.resume %}
     <div class="resume-section">
       <h2 class="section-title">{{ section[0] | capitalize }}</h2>
