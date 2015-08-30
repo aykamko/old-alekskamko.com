@@ -1,13 +1,15 @@
 about:
 
+    resume: "[alekskamko_resume.pdf](alekskamko_resume.pdf)"
+    email: "[aleks@alekskamko.com](mailto:aleks@alekskamko.com)"
+    latest_work:
+        company: Twitch
+        team: Identity
+        term: Summer 2015
     education:
         university: UC Berkeley
         major: Electrical Engineering and Computer Science
         graduation: May 2016
-    latest_work:
-        company: Facebook
-        team: Language Technology
-        term: Summer 2014
     interests:
         - teaching
         - music
@@ -22,5 +24,3 @@ about:
         - "[facebook](http://fb.me/ayk)"
         - "[spotify](http://open.spotify.com/user/mrpersonguy)"
         - "[lastfm](http://www.last.fm/user/aykamko)"
-    resume: "[alekskamko_resume.pdf](alekskamko_resume.pdf)"
-    email: "[ak@alekskamko.com](mailto:ak@alekskamko.com)"
