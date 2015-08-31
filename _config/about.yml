@@ -1,6 +1,8 @@
 about:
 
-    resume: "[alekskamko_resume.pdf](alekskamko_resume.pdf)"
+    resume:
+        - "[pdf](alekskamko_resume.pdf)"
+        - "[plaintext](alekskamko_resume.txt)"
     email: "[aleks@alekskamko.com](mailto:aleks@alekskamko.com)"
     latest_work:
         company: Twitch
