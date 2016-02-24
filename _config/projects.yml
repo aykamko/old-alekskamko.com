@@ -1,15 +1,14 @@
 projects:
 
   - name: RE-volv.org
-    url: http://revolv-prod.herokuapp.com
+    url: https://re-volv.org
     repo: https://github.com/calblueprint/revolv
     image: revolv.jpg
     description: >
       A Django web app for [RE-volv](http://re-volv.org), a non-profit
-      dedicated to crowd-funded, revolving solar energy funds. Developed pro bono
-      through [Blueprint](http://calblueprint.org), a student organization I am
-      a part of, that uses technology for social good. Soon to be launched at
-      [beta.re-volv.org](http://beta.re-volv.org).
+      dedicated to crowd-funded solar energy projects. Developed pro bono with
+      my [Blueprint](http://calblueprint.org) teammates, a UC Berkeley student
+      organization that uses technology for social good.
 
   - name: αβ Pruning Practice
     url: http://alphabeta.alekskamko.com
