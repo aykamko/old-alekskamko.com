@@ -1,12 +1,7 @@
 #!/bin/bash
 #
-# Run with: cat <(curl -sL alekskamko.com/dotfiles-setup) | sudo bash
+# Run with: bash <(wget -O - alekskamko.com/dotfiles-setup)
 #
-
-if [ $(/usr/bin/id -u) -ne 0 ]; then
-    echo "Please run as root"
-    exit 1
-fi
 
 os=$(uname)
 if echo "$os" | grep -iq "linux"; then
@@ -31,4 +26,10 @@ if echo "$os" | grep -iq "linux"; then
     fi
 fi
 
-echo "Please logout and log back in to see changes to take effect."
+YELLOW=$(tput setaf 3)
+RESET=$(tput sgr0)
+echo "${YELLOW}"
+echo "################################################################"
+echo "# Please logout and log back in to see changes to take effect! #"
+echo "################################################################"
+echo "${RESET}"
