@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Run with: sudo bash <(curl -L https://alekskamko.com/dotfiles.sh)
+# Run with: sudo bash <(curl -L alekskamko.com/dotfiles-setup)
 #
 
 if [ $(/usr/bin/id -u) -ne 0 ]; then
