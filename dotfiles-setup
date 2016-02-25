@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Run with: sudo bash <(curl -L alekskamko.com/dotfiles-setup)
+# Run with: cat <(curl -sL alekskamko.com/dotfiles-setup) | sudo bash
 #
 
 if [ $(/usr/bin/id -u) -ne 0 ]; then
@@ -16,6 +16,7 @@ if echo "$os" | grep -iq "linux"; then
     sudo apt-get update
     sudo apt-get install git
 elif "$os" | grep -iq "darwin"; then
+    echo
     # TODO
 fi
 
