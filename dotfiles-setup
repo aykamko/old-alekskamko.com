@@ -9,7 +9,7 @@ if echo "$os" | grep -iq "linux"; then
         sudo ln -s $(which yum) /usr/bin/apt-get
     fi
     sudo apt-get update
-    sudo apt-get install git
+    sudo apt-get install -y git
 elif "$os" | grep -iq "darwin"; then
     echo
     # TODO
