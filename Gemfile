@@ -5,3 +5,4 @@ source "https://rubygems.org"
 gem 'jekyll'
 gem 'jekyll-minifier'
 gem 'colorize'
+gem 'pry'
