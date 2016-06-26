@@ -50,8 +50,7 @@ layout: default
     <div class="project">
       {% if parity == 'odd' %}
       <div class="project-img-div">
-        {% capture proj_img %}{{ project.image | prepend: "static/img/" }}{% endcapture %}
-        <img src="{% base64 proj_img %}">
+        <img src="{{ project.image | prepend: "static/img/" | prepend: site.baseurl}}">
       </div>
       <div class="table-spacer"></div>
       {% endif %}
@@ -69,8 +68,7 @@ layout: default
       {% if parity == 'even' %}
       <div class="table-spacer"></div>
       <div class="project-img-div">
-        {% capture proj_img %}{{ project.image | prepend: "static/img/" }}{% endcapture %}
-        <img src="{% base64 proj_img %}">
+        <img src="{{ project.image | prepend: "static/img/" | prepend: site.baseurl}}">
       </div>
       {% endif %}
     </div>
