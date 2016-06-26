@@ -1,27 +1,25 @@
 <script>
 function _jQueryOnload() {
+  // Add cubic easing to animations (didn't want to import all of jQuery UI)
+  // http://gsgd.co.uk/sandbox/jquery/easing/
+  $.extend($.easing, {
+    easeInOutCubic: function (x, t, b, c, d) {
+      if ((t/=d/2) < 1) return c/2*t*t*t + b;
+      return c/2*((t-=2)*t*t + 2) + b;
+    },
+  });
 
-// Add cubic easing to animations (didn't want to import all of jQuery UI)
-// http://gsgd.co.uk/sandbox/jquery/easing/
-$.extend($.easing, {
-  easeInOutCubic: function (x, t, b, c, d) {
-    if ((t/=d/2) < 1) return c/2*t*t*t + b;
-    return c/2*((t-=2)*t*t + 2) + b;
-  },
-});
+  // Menu item scroll logic
+  var navToggle = $('#nav-toggle')[0];
+  var htmlBody = $('html, body');
+  $('a[href*=#]').click(function() {
+    htmlBody.animate({scrollTop: $(this.hash).offset().top}, 750, 'easeInOutCubic');
+    navToggle.checked = false;
+    return false;
+  });
 
-// Menu item scroll logic
-var navToggle = $('#nav-toggle')[0];
-var htmlBody = $('html, body');
-$('a[href*=#]').click(function() {
-  htmlBody.animate({scrollTop: $(this.hash).offset().top}, 750, 'easeInOutCubic');
-  navToggle.checked = false;
-  return false;
-});
-
-// Make all anchors open new tabs
-$('a').attr('target', '_blank');
-
+  // Make all anchors open new tabs
+  $('a').attr('target', '_blank');
 }
 </script>
-<script async src="https://code.jquery.com/jquery-2.1.3.min.js" onload="_jQueryOnload()"></script>
+<script defer async src="https://code.jquery.com/jquery-2.1.3.min.js" onload="_jQueryOnload()"></script>
