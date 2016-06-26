@@ -22,7 +22,10 @@
   <style>{% include font.css %}</style>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="{{ "static/css/main.css" | prepend: site.baseurl }}">
+  <style type="text/css">
+    {% capture include_to_sassify %}{% include main.scss %}{% endcapture %}
+    {{ include_to_sassify | scssify }}
+  </style>
 
   <!-- no-js -->
   <script>document.documentElement.classList.remove('no-js');</script>

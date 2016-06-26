@@ -21,5 +21,10 @@ function _jQueryOnload() {
   // Make all anchors open new tabs
   $('a').attr('target', '_blank');
 }
+(function() {
+  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+  po.src = 'https://code.jquery.com/jquery-2.1.3.min.js';
+  po.onload = _jQueryOnload;
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
 </script>
-<script defer async src="https://code.jquery.com/jquery-2.1.3.min.js" onload="_jQueryOnload()"></script>
