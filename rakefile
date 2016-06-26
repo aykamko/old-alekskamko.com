@@ -1,37 +1,43 @@
 root = File.expand_path('.')
 
-deploy_dir = "_deploy"
-deploy_branch = "master"
-deploy_remote = "origin"
-config_files = Dir.glob("_config/*.yml").join(",")
+git_repo = 'https://github.com/aykamko/aykamko.github.io'
+deploy_dir = '_deploy'
+deploy_branch = 'master'
+deploy_remote = 'origin'
+config_files = Dir.glob('_config/*.yml').join(',')
 
 task :generate do
-    puts("Generating static site into #{deploy_dir}")
-    system("jekyll build --config #{config_files}");
+  puts("Generating static site into #{deploy_dir}")
+  system("jekyll build --config #{config_files}")
 end
 
 task :deploy do
-    puts "Preparing to deploy."
-    (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
-    puts "Generating site from source."
-    Rake::Task[:generate].execute
-    cd "#{deploy_dir}" do
-        system("git add . --all")
-        system("git add -u .")
-        message = "Site updated at #{Time.now.utc}"
-        puts "\n## Committing: #{message}"
-        system "git commit -m '#{message}'"
-        puts "\n## Pushing generated #{deploy_dir} site"
-        system "git push --force #{deploy_remote} #{deploy_branch}"
-        puts "\n## Github Pages deploy complete"
-    end
+  puts 'Preparing to deploy.'
+  unless Dir.exist?(deploy_dir)
+    mkdir_p deploy_dir
+    `git clone #{git_repo} -b master #{deploy_dir}`
+  end
+  (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
+
+  puts 'Generating site from source.'
+  Rake::Task[:generate].execute
+
+  cd deploy_dir do
+    system('git add -A .')
+    message = "Site updated at #{Time.now.utc}"
+    puts "\n## Committing: #{message}"
+    system "git commit -m '#{message}'"
+    puts "\n## Pushing generated #{deploy_dir} site"
+    system "git push --force #{deploy_remote} #{deploy_branch}"
+    puts '\n## Github Pages deploy complete'
+  end
 end
 
 task :serve do
-    cd "#{root}" do
-        puts "Starting jekyll server."
-        puts "Config files:"
-        puts config_files
-        system("jekyll serve --baseurl '' --config #{config_files} --destination #{deploy_dir} --watch")
-    end
+  cd root do
+    puts 'Starting jekyll server.'
+    puts 'Config files:'
+    puts config_files
+    system("jekyll serve --baseurl '' --config #{config_files} --destination #{deploy_dir} --watch")
+  end
 end
