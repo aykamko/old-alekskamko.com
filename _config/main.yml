@@ -16,5 +16,5 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
-# gems:
-#     - jekyll-minifier # http://www.rubydoc.info/github/digitalsparky/jekyll-minifier/master
+gems:
+    - jekyll-minifier # http://www.rubydoc.info/github/digitalsparky/jekyll-minifier/master
