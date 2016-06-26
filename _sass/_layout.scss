@@ -47,12 +47,12 @@
             display: table-cell;
             vertical-align: middle;
 
-            h1 { 
-                font-size: 80px; 
+            h1 {
+                font-size: 80px;
                 text-indent: -4px;
             }
-            h2 { 
-                font-size: 36px; 
+            h2 {
+                font-size: 36px;
             }
 
             @include media-query($on-tablet) {
@@ -60,9 +60,9 @@
                 height: inherit;
                 text-align: center;
 
-                h1, h2 { 
+                h1, h2 {
                     display: inline-block;
-                    font-size: 36px; 
+                    font-size: 36px;
                 }
             }
         }
@@ -104,11 +104,19 @@
                 padding: strip-units($console-padding / ($on-mobile - (2 * $base-side-padding))) * 100%;
             }
 
-            > .indent {
+            > .indent0 {
                 display: inline-block;
-                padding-left: 32px;
-                text-indent: -16px;
+                text-indent: 0px;
             }
+            > .indent1 {
+                display: inline-block;
+                text-indent: 16px;
+            }
+            > .indent2 {
+                display: inline-block;
+                text-indent: 32px;
+            }
+            // more as needed
         }
     }
 }

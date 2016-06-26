@@ -22,22 +22,10 @@ layout: default
   </div>
   <div class="console-section">
     <div class="console">
-      <span class="gp">>>></span> <span class="kn">from</span> <span class="nn">aboutme</span> <span class="kn">import</span><span class="o"> * </span>
+      <span class="gp">>>></span> <span class="kn">require</span> '<span class="nn">aboutme</span>'<br>
+      <span class="nn">true</span>
       <br/><br/>
-
-      {% for field in site.about %}
-      <span class="gp">>>></span> {{field[0]}}
-      <br/>
-      {% assign type = field[1] | gettype %}
-      {% if type == "Array" %}
-      [{% for item in field[1] %}'<span class="s">{{ item | markdownify | stripp }}</span>'{% unless forloop.last %}, {% endunless %}{% endfor %}]
-      {% elsif type == "Hash" %}
-      {<br>{% for entry in field[1] %}<div class="indent">'<span class="s">{{ entry | first }}</span>': '<span class="s">{{ entry | last }}</span>'{% unless forloop.last %},{% endunless %}</div><br>{% endfor %}}
-      {% else %}
-      '<span class="s">{{ field[1] | markdownify | stripp }}</span>'
-      {% endif %}
-      {% unless forloop.last %}<br/><br/>{% endunless %}
-      {% endfor %}
+      {{ site.about | pythonify }}
     </div>
   </div>
 </section>

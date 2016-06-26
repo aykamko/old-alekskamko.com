@@ -2,6 +2,12 @@ resume:
 
     experience:
 
+      - title_left: Financial Ops Engineering Intern
+        subtitle_left: Stripe
+        title_right: Summer 2016 (Present)
+        info:
+          - Developing for Stripe's credit card authorization, clearing, and settlement systems.
+
       - title_left: Identity Team Intern
         subtitle_left: Twitch
         title_right: Summer 2015
@@ -18,7 +24,7 @@ resume:
         subtitle_left: UC Berkeley
         title_right: Fall 2014 - Present
         info:
-          - TA for intro course and OS course. Teach sections/labs, hold office hours, lead review sessions, develop section and test material.
+          - Currently a TA for Operating Systems and, previously, an intro level course. Teach sections/labs, hold office hours, lead review sessions, develop section and test material.
 
       - title_left: Facebook University iOS Intern
         subtitle_left: Facebook
@@ -31,42 +37,37 @@ resume:
       - subtitle_left: Proficient
         list:
             - Python
+            - Ruby
             - Java
             - Javascript
+            - bash/zsh
             - Golang
             - git
             - GitHub
             - vim
+            - Unix
+            - OS X
       - subtitle_left: Experience
         list:
             - Flask
             - Django
-            - Ruby/Rails
-            - PHP (Hack)
+            - Rails
             - C
             - C++
             - Objective-C
             - SQL
             - mercurial
-            - bash
       - subtitle_left: Exposure
         list:
+            - PHP (Hack)
             - Node.js
             - Jenkins
-      - subtitle_left: Other
-        list:
-            - Mac OS X
-            - Unix
-            - Adobe Photoshop
-            - Illustrator
-            - Premiere Pro
-            - Final Cut Pro
 
     education:
 
-      - title_left: BS Electrical Engineering and Computer Science
+      - title_left: B.S. Electrical Engineering and Computer Science
         subtitle_left: University of California, Berkeley
-        title_right: Expected May 2016
+        title_right: May 2016
         info:
           - Structure and Interpretation of Computer Programs (Python, Scheme)
           - Data Structures and Algorithms (Java)
@@ -77,9 +78,22 @@ resume:
           - Internet Architecture/Networks (Python)
           - Machine Learning (Golang, Python)
           - AI (Python)
-
+          - Parallel Computers and Algorithms (C, C++, UPC, Python)
+          - Computer Security (C, Python)
+          - Practical Networking (Android, Python, Bro)
 
     leadership:
+      - title_left: Project Leader, Bizworld
+        subtitle_left: "[Blueprint](http://calblueprint.org)"
+        title_right: Spring 2016
+        info:
+          - Led a team of 4 developers to design an educator portal for [bizworld.org](http://bizworld.org)
+
+      - title_left: VP of Tech
+        subtitle_left: "[Blueprint](http://calblueprint.org)"
+        title_right: Fall 2016
+        info:
+          - Maintain and develop calblueprint.org and other internal tools. Code review changes to Blueprint projects. Advise project leaders.
 
       - title_left: Web Tier Leader
         subtitle_left: "[Innovative Design](http://innovativedesign.club)"
@@ -87,8 +101,3 @@ resume:
         info:
           - Led a team of 6 developers and designers in improving web sites and brands for on-campus organizations.
 
-      - title_left: VP of Tech
-        subtitle_left: "[Blueprint](http://calblueprint.org)"
-        title_right: Present
-        info:
-          - Maintain and develop calblueprint.org and other internal tools. Code review changes to Blueprint projects. Advise project leaders.
