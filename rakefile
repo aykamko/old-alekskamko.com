@@ -13,6 +13,8 @@ end
 
 task :deploy do
   puts 'Preparing to deploy.'
+  `bundle install`
+
   unless Dir.exist?(deploy_dir)
     mkdir_p deploy_dir
     `git clone #{git_repo} -b master #{deploy_dir}`
