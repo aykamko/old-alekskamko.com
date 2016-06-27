@@ -1,53 +1,58 @@
 Aleksandr Kamko
-aleks@alekskamko.com  |  http://alekskamko.com  |  (559) 940-5728  
-
+aleks@alekskamko.com | http://alekskamko.com | (559) 940-5728
 
 > Education
-University of California, Berkeley (Fall 2012 - Present)
-BS Electrical Engineering and Computer Science, expected May 2016 (GPA: 3.5)
+B.S. Electrical Engineering and Computer Science (Spring 2016)
+UC Berkeley, GPA 3.5
+
+M.Eng. Electrical Engineering and Computer Science (Expected: Spring 2017)
+UC Berkeley
 
 > Skills
-Proficient in:	Python, Java, Javascript, Golang, git, GitHub, vim
-Experience in:	Flask, Django, Ruby/Rails, PHP (Hack), C, C++, iOS/Objective-C, SQL, VimL, bash, mercurial
-Exposure to:	Node.js, Jenkins
+Proficient in: Python, Ruby, Javascript, bash, Golang, VimL, Java, git, GitHub, vim
+Experience in: Flask, Django, Rails, C, C++, iOS/Objective-C, Julia, SQL, mercurial
+Exposure to: Node.js, PHP (Hack), Jenkins
 
 > Experience
+- Financial Operations Engineering Intern @ Stripe (Summer 2016, Present)
++ Developing for Stripe’s credit card authorization, clearing, and settlement systems.
+
 - Identity Team Intern @ Twitch (Summer 2015)
-   + Launched new, secure OpenID authentication portal. Designed and implemented standalone Golang tools for configs and i18n.
++ Launched new, secure OpenID authentication portal. Designed and implemented standalone Golang tools for configs and i18n.
 
 - Language Technology Team Intern @ Facebook (Summer 2014)
-   + Analyzed large data sets of out-of-vocabularies (OOVs) in translation requests; developed web interface to flag and eliminate OOVs.
++ Analyzed large datasets of out-of-vocabularies (OOVs) in translation requests; developed web interface to flag and eliminate OOVs.
 
-- Undergrad Student Instructor @ CS162 [Operating Systems] & CS61B [Data Structures] (Fall 2014 - Present) 
-   + TA for intro course and OS course. Teach sections/labs, hold office hours, lead review sessions, develop section and test material.
+- Undergrad Student Instructor @ CS162 [Operating Systems] (Fall 2016 - Present)
++ TA for Operating Systems course. Teach sections/labs, hold office hours, lead review sessions, develop section and test material.
 
 - Facebook University iOS Intern @ Facebook (Summer 2013)
-   + Led a team of 3 in building an iOS application. Built two standalone iOS apps and a web app at company-held hackathons.
++ Led a team of 3 in building an iOS application. Built two standalone iOS apps and a web app at company-held hackathons.
 
 > Selected Projects
-- RE-volv.org [Django, PayPal] (demo: revolv-prod.herokuapp.com)
-   + Django web app for RE-volv, a non-profit for crowd-sourced, revolving solar energy funding. (TBA launch at beta.re-volv.org)
+- git Autograder Infrastructure [git, GitHub, Python, MongoDB]
++ Designed and built git-based infrastructure + autograder used as backbone for multiple courses. Replaced legacy svn backbone.
+
+- RE-volv.org [Django, PayPal] (demo: re-volv.org)
++ Wrote beta for Django web app for RE-volv, a nonprofit for crowd-sourced, revolving solar energy funding. (Ownership transferred.)
 
 - Alpha-Beta Pruning Algorithm Visualizer [D3, Angular] (demo: alphabeta.alekskamko.com)
-   + D3+Angular web app for visualizing and understanding the Alpha-Beta Pruning algorithm. Proved quite helpful to my 61B students.
++ D3+Angular web app for visualizing and understanding the Alpha-Beta Pruning algorithm. Proved quite helpful to my 61B students.
+
+- tag [Golang] (source: github.com/aykamko/tag)
++ Command line tool written on spare time. A wrapper around ag (the_silver_searcher) that generates shell aliases for ag matches.	
 
 - Resistor Reader [Android] (source: github.com/aykamko/ResistorReader)
-   + User-friendly Android app for identifying resistor values. First mobile app. Available on Google Play store for free.
-
-- V1 of www.uguru.me [Flask, Postgres]
-   + Developed core Flask backend for V1. Oversaw production Postgres DB, resolved daily bug reports, actively delivered new features.
-
-- Bump [iOS, HTML5, Node.js, MongoDB] (source: github.com/aykamko/Bump)
-   + iOS app and HTML5 app that allow two users to add one another on Facebook by bumping their phones together.
-
-- Traquest [iOS, Parse, Facebook SDK, Google Maps SDK]
-   + iOS app that adds tracking to FB events while respecting user privacy. Developed over summer in Facebook University program.
++ User-friendly Android app for identifying resistor values. First mobile app. Available on Google Play store for free.
 
 > Leadership
-- Innovative Design Web Tier Leader (Fall 2014) (innovativedesign.club)
-   + Led a team of 6developers and designers in improving web sites and brands for on-campus organizations.
+- Blueprint Project Leader for Bizworld Team (Spring 2016) (bizworld.org)
++ Leading team of 4 in developing new classroom management platform.
 
 - Blueprint VP of Tech (Fall 2015) (calblueprint.org)
-   + Maintain and develop calblueprint.org and other internal tools. Code review changes to Blueprint projects. Advise project leaders.
++ Maintained calblueprint.org, developed multiple internal tools. Moved Blueprint to Phabricator. Advised project leaders.
 
+- Innovative Design Web Tier Leader (Fall 2014) (innovativedesign.club)
++ Led a team of 6 developers and designers in improving web sites and brands for on-campus organizations.
 
+
