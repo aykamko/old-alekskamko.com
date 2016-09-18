@@ -1,12 +1,12 @@
 Aleksandr Kamko
-aleks@alekskamko.com | http://www.alekskamko.com | (559) 940-5728
+aleks@alekskamko.com | www.alekskamko.com | (559) 940-5728
 
 > Education
 B.S. Electrical Engineering and Computer Science (Spring 2016)
 UC Berkeley, GPA 3.5
 
 M.Eng. Electrical Engineering and Computer Science (Expected: Spring 2017)
-UC Berkeley, Advisor: Prof. John Canny
+UC Berkeley, Concentration: Data Science & Systems, Advisor: Prof. John Canny
 
 > Experience
 - Financial Operations Engineering Intern @ Stripe (Summer 2016)
@@ -22,7 +22,7 @@ UC Berkeley, Advisor: Prof. John Canny
 + TA for Operating Systems course. Teach sections + labs, hold office hours, lead review sessions, develop section and test material.
 
 - Facebook University iOS Intern @ Facebook (Summer 2013)
-+ Led a team of 3 in building an iOS application. Built two standalone iOS apps and a web app at company-held hackathons.
++ Worked in team of 4 in building an iOS application. Built two standalone iOS apps and a web app at company-held hackathons.
 
 > Selected Projects
 - M.Eng. Capstone Project: Scaling up Deep Learning on Clusters [Scala, Spark, BIDMach, CUDA, EC2]
@@ -38,7 +38,7 @@ UC Berkeley, Advisor: Prof. John Canny
 + D3+Angular web app for visualizing and understanding the Alpha-Beta Pruning algorithm. Proved helpful to my 61B students.
 
 - tag [Golang] (source: github.com/aykamko/tag)
-+ Command line tool written on spare time. A wrapper around ag (the_silver_searcher) that generates shell aliases for ag matches.
++ Command line tool written on spare time. A wrapper around ag (the_silver_searcher) that generates shell aliases for ag matches.	
 
 > Leadership
 - Blueprint Project Leader for Bizworld Team (Spring 2016) (bizworld.org)
@@ -53,6 +53,6 @@ UC Berkeley, Advisor: Prof. John Canny
 > Skills
 Proficient in: Python, Ruby, Javascript, bash, Golang, VimL, Java, git, GitHub, linux, vim
 Experience in: Flask, Django, Rails, C, C++, iOS/Objective-C, Julia, SQL, mercurial, EC2
-Exposure to: Node.js, PHP (Hack), Jenkins
+Exposure to: Node.js, PHP/Hack, Jenkins
 
 
