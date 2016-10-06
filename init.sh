@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Run with: bash <(wget -O - alekskamko.com/dotfiles-setup)
+# Run with: bash <(wget -O - www.alekskamko.com/init.sh)
 #
 
 os=$(uname)
