@@ -10,6 +10,14 @@ layout: default
     <div class="blurb">
       <h1>Hi!</h1>
       <h2>I'm Aleks Kamko.</h2>
+      <div>
+        <a href="#resume">
+          <div class="skip-to-resume">
+            <h4>Skip to Resume</h4>
+            <div class="chevron">
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -65,7 +73,19 @@ layout: default
 
 <section id="resume" class="resume">
   <div class="container">
-    <div class="blurb">Below is an HTML resume. You can also grab a <a href="{{ "alekskamko_resume.pdf" | prepend: site.baseurl }}">pdf</a> or <a href="{{ "alekskamko_resume.txt" | prepend: site.baseurl }}">plaintext</a> version.</div>
+    <div class="blurb">Below is an HTML resume. You can grab a pdf or plaintext version too.</div>
+    <div class="resume-buttons">
+      <div class="inline">
+        <a href="{{ "alekskamko_resume.pdf" | prepend: site.baseurl }}">
+          <div class="resume-button">pdf</div>
+        </a>
+      </div>
+      <div class="inline">
+        <a href="{{ "alekskamko_resume.txt" | prepend: site.baseurl }}">
+          <div class="resume-button">plaintext</div>
+        </a>
+      </div>
+    </div>
     {% for section in site.resume %}
     <div class="resume-section">
       <h2 class="section-title">{{ section[0] | capitalize }}</h2>

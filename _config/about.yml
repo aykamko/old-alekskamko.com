@@ -11,8 +11,10 @@ about:
     - degree: M.Eng. Electrical Engineering and Computer Science
       concentration: Data Science and Systems
       university: UC Berkeley
+      when: Spring 2017
     - degree: B.S. Electrical Engineering and Computer Science
       university: UC Berkeley
+      when: Spring 2016
   interests:
     - teaching
     - music
