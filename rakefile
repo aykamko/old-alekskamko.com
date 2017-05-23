@@ -1,10 +1,11 @@
 root = File.expand_path('.')
 
 git_repo = 'https://github.com/aykamko/aykamko.github.io'
+config_dir = '_config'
 deploy_dir = '_deploy'
 deploy_branch = 'master'
 deploy_remote = 'origin'
-config_files = Dir.glob('_config/*.yml').join(',')
+config_files = Dir.glob("#{config_dir}/*.yml").join(',')
 
 task :generate do
   puts("Generating static site into #{deploy_dir}")
@@ -40,6 +41,8 @@ task :serve do
     puts 'Starting jekyll server.'
     puts 'Config files:'
     puts config_files
-    system("jekyll serve --baseurl '' --config #{config_files} --destination #{deploy_dir} --watch")
+    system(%(
+           jekyll serve --baseurl '' --config #{config_files} --destination #{deploy_dir} --watch
+          ))
   end
 end

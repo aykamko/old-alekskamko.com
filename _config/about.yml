@@ -4,19 +4,21 @@ about:
     - "[plaintext](alekskamko_resume.txt)"
   email: "[aleks@alekskamko.com](mailto:aleks@alekskamko.com)"
   latest_work:
-    company: Stripe
-    team: Financial Operations Engineering
-    term: Summer 2016
+    company: OpenAI
+    team: Infrastructure Engineer
+    term: March 2017
   education:
-    - university: UC Berkeley
-      degree: B.S. Electrical Engineering and Computer Science
-    - university: UC Berkeley
-      degree: M.S. Electrical Engineering and Computer Science
+    - degree: M.Eng. Electrical Engineering and Computer Science
       concentration: Data Science and Systems
-      graduation: August 2017
+      university: UC Berkeley
+    - degree: B.S. Electrical Engineering and Computer Science
+      university: UC Berkeley
   interests:
     - teaching
     - music
+    - reading
+    - deep learning
+    - systems
     - kimchi
     - biking
     - sick threads

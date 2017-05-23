@@ -2,102 +2,114 @@ resume:
 
     experience:
 
+      - title_left: Infrastructure Engineer (Part-Time)
+        subtitle_left: OpenAI
+        title_right: March 2017
+        info:
+          - Scaled system for tracking computational resource consumption across company Kubernetes clusters.
+
       - title_left: Financial Ops Engineering Intern
         subtitle_left: Stripe
-        title_right: Summer 2016 (Present)
+        title_right: Summer 2016
         info:
-          - Developing for Stripe's credit card payment authorization, clearing, and settlement systems.
+          - Developed next generation infrastructure for Stripe’s credit card authorization, clearing, and settlement systems.
 
       - title_left: Identity Team Intern
         subtitle_left: Twitch
         title_right: Summer 2015
         info:
-          - Launched new, secure OpenID authentication portal. Designed and implemented standalone Golang tools for configs and i18n.
+          - Launched new, secure OpenID authentication portal for users. Designed & implemented Golang tools for configs and i18n.
 
       - title_left: Language Technology Team Intern
         subtitle_left: Facebook
         title_right: Summer 2014
         info:
-          - Analyzed large data sets of out-of-vocabularies (OOVs) in translation requests; developed web interface to flag and eliminate OOVs.
+          - Diagnosed out-of-vocabulary (OOV) issues in translation systems. Developed web interface to flag & eliminate OOVs.
 
-      - title_left: TA @ CS162 [Operating Systems] & CS61B [Data Structures]
+      - title_left: GSI @ Operating Systems [CS162] & Data Structures [CS61B]
         subtitle_left: UC Berkeley
-        title_right: Fall 2014 - Present
+        title_right: Fall 2014 - Spring 2017
         info:
-          - Currently a TA for Operating Systems and, previously, an intro level course. Teach sections/labs, hold office hours, lead review sessions, develop section and test material.
-
-      - title_left: Facebook University iOS Intern
-        subtitle_left: Facebook
-        title_right: Summer 2013
-        info:
-          - Worked in team of 3 in building an iOS application. Built two standalone iOS apps and a web app at company-held hackathons.
+          - Taught sections and labs, held office hours, led review sessions, developed project, homework, test, and section material.
 
     skills:
 
       - subtitle_left: Proficient
         list:
             - Python
-            - Ruby
-            - Java
-            - Javascript
+            - Tensorflow
+            - EC2
+            - Linux
             - bash/zsh
-            - Golang
             - git
             - GitHub
-            - vim
-            - Unix
-            - OS X
+            - Golang
+            - Ruby
+            - Javascript
+            - VimL/vim
       - subtitle_left: Experience
         list:
+            - Scala
             - Flask
             - Django
             - Rails
             - C
             - C++
-            - Objective-C
+            - iOS (Objective-C)
             - SQL
-            - mercurial
       - subtitle_left: Exposure
         list:
-            - PHP (Hack)
+            - Julia
             - Node.js
+            - PHP (Hack)
             - Jenkins
+
 
     education:
 
+      - title_left: M.Eng. Electrical Engineering and Computer Science, Data Science & Systems
+        subtitle_left: University of California, Berkeley
+        title_right: May 2017
+        info:
+          - Designing, Visualizing, & Understanding Deep Neural Networks (Python, Tensorflow)
+          - Deep Reinforcement Learning (Python, Tensorflow, Deep Learning)
+          - Advanced Topics in Computer Systems (Python, C, C++)
+          - Convex Optimization (Python)
+          - Project Management
+          - Marketing & Product Management
+          - Software Defined PCB Design (Stanza, Hardware)
       - title_left: B.S. Electrical Engineering and Computer Science
         subtitle_left: University of California, Berkeley
         title_right: May 2016
         info:
+          - Machine Learning (Julia, Python)
+          - AI (Python)
+          - Parallel Computers and Algorithms (C, C++, UPC, Python)
+          - Operating Systems (C, Java)
+          - Compilers (C++, Python)
+          - Internet Architecture and Protocols (Python)
+          - Practical Networking (Android, Python, Bro)
+          - Computer Security (C, Python)
+          - Algorithms
           - Structure and Interpretation of Computer Programs (Python, Scheme)
           - Data Structures and Algorithms (Java)
           - Machine Structures (C, MIPS)
-          - Algorithms
-          - Operating Systems (C, Java)
-          - Compilers (C++, Python)
-          - Internet Architecture/Networks (Python)
-          - Machine Learning (Golang, Python)
-          - AI (Python)
-          - Parallel Computers and Algorithms (C, C++, UPC, Python)
-          - Computer Security (C, Python)
-          - Practical Networking (Android, Python, Bro)
 
     leadership:
-      - title_left: Project Leader, Bizworld
+      - title_left: "Project Leader for [Bizworld.org](http://bizworld.org) Team"
         subtitle_left: "[Blueprint](http://calblueprint.org)"
         title_right: Spring 2016
         info:
-          - Led a team of 4 developers to design an educator portal for [bizworld.org](http://bizworld.org)
+          - Led team of 5 in creating a tailored classroom management system. Launched globally, serving >500k students in >100 countries.
 
       - title_left: VP of Tech
         subtitle_left: "[Blueprint](http://calblueprint.org)"
-        title_right: Fall 2016
+        title_right: Fall 2015
         info:
-          - Maintain and develop calblueprint.org and other internal tools. Code review changes to Blueprint projects. Advise project leaders.
+          - Advised org and project leaders. Developed multiple internal tools. Moved Blueprint to Phabricator. Maintained calblueprint.org.
 
-      - title_left: Web Tier Leader
-        subtitle_left: "[Innovative Design](http://innovativedesign.club)"
-        title_right: Fall 2014
-        info:
-          - Led a team of 6 developers and designers in improving web sites and brands for on-campus organizations.
+    awards:
+      - title_left: Outstanding Graduate Student Instructor
+        subtitle_left: University of California, Berkeley
+        title_right: Fall 2017
 
