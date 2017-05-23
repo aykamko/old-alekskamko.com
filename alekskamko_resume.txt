@@ -1,58 +1,31 @@
-Aleksandr Kamko
-aleks@alekskamko.com | www.alekskamko.com | (559) 940-5728
+Aleks Kamko
+aleks@alekskamko.com | www.alekskamko.com | github.com/aykamko
 
-> Education
-B.S. Electrical Engineering and Computer Science (Spring 2016)
-UC Berkeley, GPA 3.5
+Experience
+Infrastructure Engineer (Part-Time) @ OpenAI (March 2017) Scaled system for tracking computational resource consumption across company Kubernetes clusters.
+Financial Operations Engineering Intern @ Stripe (Summer 2016) Developed next generation infrastructure for Stripe's credit card authorization, clearing, and settlement systems.
+Identity Team Intern @ Twitch (Summer 2015) Launched new, secure OpenID authentication portal for users. Designed & implemented Golang tools for configs and i18n.
+Language Technology Team Intern @ Facebook (Summer 2014) Diagnosed out-of-vocabulary (OOV) issues in translation systems. Developed web interface to flag & eliminate OOVs.
+Graduate Student Instructor @ Operating Systems (Fall 2016 ­ Spring 2017, 3 Semesters) Taught sections and labs, held office hours, led review sessions, developed project, homework, test, and section material.
 
-M.Eng. Electrical Engineering and Computer Science (Expected: Spring 2017)
-UC Berkeley, Concentration: Data Science & Systems, Advisor: Prof. John Canny
+Selected Projects
+Scaling up Deep Learning on Clusters, M.Eng. Capstone [Scala, Spark, EC2, CUDA] <github.com/BIDData> Developed large-scale distributed Deep Learning system optimized for GPU-enabled clusters. Advised by John Canny.
+Octobear v1, a git Autograder Infrastructure [git, GitHub, Python, MongoDB] Designed & built git-based infrastructure + autograder used as backbone for multiple courses. Replaced legacy svn system.
+RE-volv.org [Django, PayPal] <re-volv.org> Wrote beta of Django web app for RE-volv, a nonprofit for crowd-sourced, revolving solar energy funding.
+tag [Golang] <github.com/aykamko/tag> Command line tool written on spare time. A wrapper around ag (silver_searcher) that enables quick jumping to ag matches.
+Alpha-Beta Pruning Algorithm Visualizer [D3.js, Angular.js] <alphabeta.alekskamko.com> D3+Angular web app for visualizing and understanding the Alpha-Beta Pruning algorithm.
 
-> Experience
-- Financial Operations Engineering Intern @ Stripe (Summer 2016)
-+ Developing next generation infrastructure for Stripeâ€™s credit card authorization, clearing, and settlement systems.
+Education
+M.Eng. Electrical Engineering and Computer Science, Data Science & Systems (Spring 2017) UC Berkeley
+B.S. Electrical Engineering and Computer Science (Spring 2016) UC Berkeley
 
-- Identity Team Intern @ Twitch (Summer 2015)
-+ Launched new, secure OpenID authentication portal. Designed and implemented standalone Golang tools for configs and i18n.
+Leadership
+Blueprint Project Leader for Bizworld Team (Spring 2016) <bizworld.org> Led team of 5 in creating a tailored classroom management system. Launched globally, serving >500k students in >100 countries.
+Blueprint VP of Tech (Fall 2015) <calblueprint.org> Advised org and project leaders. Developed multiple internal tools. Moved Blueprint to Phabricator. Maintained calblueprint.org.
 
-- Language Technology Team Intern @ Facebook (Summer 2014)
-+ Analyzed large datasets of out-of-vocabularies (OOVs) in translation requests; developed web interface to flag and eliminate OOVs.
+Skills
+Proficient in: Python, Tensorflow, EC2, Linux, bash, git, GitHub, Golang, Ruby, Javascript, Java, VimL/vim Experience in: Scala, Flask, Django, Rails, C, C++, iOS (Objective-C), SQL
+Exposure to: Julia, Node.js, PHP/Hack, Jenkins
 
-- Graduate Student Instructor @ CS162 [Operating Systems] (Fall 2016 - Present)
-+ TA for Operating Systems course. Teach sections + labs, hold office hours, lead review sessions, develop section and test material.
-
-- Facebook University iOS Intern @ Facebook (Summer 2013)
-+ Worked in team of 4 in building an iOS application. Built two standalone iOS apps and a web app at company-held hackathons.
-
-> Selected Projects
-- M.Eng. Capstone Project: Scaling up Deep Learning on Clusters [Scala, Spark, BIDMach, CUDA, EC2]
-+ Building next gen, large-scale ML and Deep Learning system for GPU-enabled clusters. Advised by Prof. John Canny.
-
-- Octobear v1, a git Autograder Infrastructure [git, GitHub, Python, MongoDB]
-+ Designed and built v1 of git-based infrastructure + autograder used as a backbone for multiple courses. Replaced legacy svn system.
-
-- RE-volv.org [Django, PayPal] (demo: re-volv.org)
-+ Wrote beta of Django web app for RE-volv, a nonprofit for crowd-sourced, revolving solar energy funding. (Ownership transferred.)
-
-- Alpha-Beta Pruning Algorithm Visualizer [D3, Angular] (demo: alphabeta.alekskamko.com)
-+ D3+Angular web app for visualizing and understanding the Alpha-Beta Pruning algorithm. Proved helpful to my 61B students.
-
-- tag [Golang] (source: github.com/aykamko/tag)
-+ Command line tool written on spare time. A wrapper around ag (the_silver_searcher) that generates shell aliases for ag matches.	
-
-> Leadership
-- Blueprint Project Leader for Bizworld Team (Spring 2016) (bizworld.org)
-+ Led team of 5 in developing a tailored classroom management system. Launched globally, serving >500k students in >100 countries.
-
-- Blueprint VP of Tech (Fall 2015) (calblueprint.org)
-+ Maintained calblueprint.org. Developed multiple internal tools. Moved Blueprint to Phabricator. Advised project leaders.
-
-- Innovative Design Web Tier Leader (Fall 2014) (innovativedesign.club)
-+ Led a team of 6 developers and designers in improving web sites and brands for on-campus organizations.
-
-> Skills
-Proficient in: Python, Ruby, Javascript, bash, Golang, VimL, Java, git, GitHub, linux, vim
-Experience in: Flask, Django, Rails, C, C++, iOS/Objective-C, Julia, SQL, mercurial, EC2
-Exposure to: Node.js, PHP/Hack, Jenkins
-
-
+Awards
+Outstanding Graduate Student Instructor (Spring 2017)
