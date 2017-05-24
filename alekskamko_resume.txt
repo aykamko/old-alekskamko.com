@@ -6,7 +6,7 @@ Infrastructure Engineer (Part-Time) @ OpenAI (March 2017) Scaled system for trac
 Financial Operations Engineering Intern @ Stripe (Summer 2016) Developed next generation infrastructure for Stripe's credit card authorization, clearing, and settlement systems.
 Identity Team Intern @ Twitch (Summer 2015) Launched new, secure OpenID authentication portal for users. Designed & implemented Golang tools for configs and i18n.
 Language Technology Team Intern @ Facebook (Summer 2014) Diagnosed out-of-vocabulary (OOV) issues in translation systems. Developed web interface to flag & eliminate OOVs.
-Graduate Student Instructor @ Operating Systems (Fall 2016 ­ Spring 2017, 3 Semesters) Taught sections and labs, held office hours, led review sessions, developed project, homework, test, and section material.
+Graduate Student Instructor @ Operating Systems (Fall 2016 - Spring 2017, 3 Semesters) Taught sections and labs, held office hours, led review sessions, developed project, homework, test, and section material.
 
 Selected Projects
 Scaling up Deep Learning on Clusters, M.Eng. Capstone [Scala, Spark, EC2, CUDA] <github.com/BIDData> Developed large-scale distributed Deep Learning system optimized for GPU-enabled clusters. Advised by John Canny.
